@@ -2194,6 +2194,9 @@ html:not(.ih4u-review) #brand{display:none!important}
     // things that live on / around the curtain
     const { lift } = geo(t);
     copy.style.transform = `translateY(${-lift}px)`;
+    // the curtain words fade out before they can slide under the header (logo, menu, button)
+    const room = Math.max(40, copy.offsetTop - 104);
+    copy.style.opacity = String(clamp(1 - (lift - room * .3) / (room * .55), 0, 1));
     hint.style.left = (cx + 26) + 'px'; hint.style.top = (ky - 6) + 'px';
     hint.style.transform = `translateY(${-0}px)`;
 
