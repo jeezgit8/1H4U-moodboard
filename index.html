@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" data-ih4u-font="assistant">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>M המשכנתאות | ייעוץ משכנתאות ומימון</title>
+<title>Israel Home For You | הבית שלכם בישראל מתחיל כאן</title>
+<meta name="description" content="נדל&quot;ן, ייעוץ משכנתאות וליווי מקצה לקצה למשפחות דוברות צרפתית שרוכשות נכס בישראל." />
+<meta name="theme-color" content="#0B2A4A" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
+<script>if(/(^|&)review=1(&|$)/.test(location.search.slice(1)))document.documentElement.classList.add('ih4u-review');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..700&family=Inter:wght@300..600&family=Heebo:wght@100..900&family=Assistant:wght@200..800&family=Rubik:wght@300..900&family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..700&family=Inter:wght@300..600&family=Heebo:wght@100..900&family=Assistant:wght@300..800&family=Rubik:wght@300..900&family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet" />
 <style>
   /* ===== IH4U - Architectural Capital design tokens ===== */
   :root{
@@ -31,9 +36,9 @@
     --brand-ocean:#0050B0; --brand-ocean-light:#0078D7;
     --brand-sun:#FFD700; --brand-sun-deep:#FFB900; --brand-on-sun:#0B1F3A;
     --brand-emerald:#0D8A4A; --brand-orange:#0078D7; --brand-purple:#06657A; --brand-turquoise:#0898B0;
-    --font-head:"Montserrat","Heebo",system-ui,sans-serif;
-    --font-body:"Inter","Heebo",system-ui,sans-serif;
-    --font-he:"Heebo",system-ui,sans-serif;
+    --font-head:"Montserrat",var(--font-he);
+    --font-body:"Inter",var(--font-he);
+    --font-he:"Assistant","Heebo",system-ui,sans-serif;
 
     --fabric:#F4F8FC;
     --fabric-shade:#D5E2F0;
@@ -46,7 +51,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--brand-primary-deep);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased}
 
-  /* ---------- HERO ---------- */
+  /* ========== HERO ========== */
   .hero-wrap{position:relative;height:200vh}            /* extra height = scroll room for lift-off */
   .hero{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;isolation:isolate}
 
@@ -109,12 +114,12 @@
     pointer-events:none;transition:opacity .6s;white-space:nowrap}
 
   /* Next section stub (so the scroll has somewhere to go) */
-  /* ---------- TESTIMONIAL (light, editorial) ---------- */
+  /* ========== TESTIMONIAL (light, editorial) ========== */
   .tst{--paper:var(--brand-background);--ink:var(--brand-text);--soft:var(--brand-text-soft);--gold:var(--brand-accent-dark);--hair:rgba(11,31,58,.14);
     position:relative;background:var(--paper);color:var(--ink);overflow:hidden;
     padding:clamp(100px,13vw,190px) clamp(20px,6vw,110px) clamp(150px,19vw,300px)}
   .tst-bgword{position:absolute;bottom:-.12em;right:0;white-space:nowrap;font-weight:700;font-size:22vw;line-height:.8;
-    letter-spacing:-.05em;color:rgba(112,0,155,.08);filter:url(#ol1);pointer-events:none;will-change:transform}
+    letter-spacing:-.05em;color:rgba(64,151,219,.1);filter:url(#ol1);pointer-events:none;will-change:transform}
   .tst-wrap{position:relative;display:grid;grid-template-columns:minmax(180px,.55fr) 2fr;gap:clamp(30px,6vw,110px);max-width:1400px;margin:0 auto}
   .tst-side{border-top:1px solid var(--ink);padding-top:22px;align-self:start}
   .tst-side .eyebrow{font-size:13px;letter-spacing:.24em;color:var(--gold);font-weight:500}
@@ -148,7 +153,7 @@
   }
   @media (prefers-reduced-motion:reduce){.tst .w,.tst-author,.tst mark{transition:none!important}}
 
-  /* ---------- GALLERY (pinned horizontal, RTL) ---------- */
+  /* ========== GALLERY (pinned horizontal, RTL) ========== */
   .gal{--paper:var(--brand-background);--ink:var(--brand-text);--soft:var(--brand-muted);--gold:var(--brand-accent-dark);position:relative;background:var(--paper);color:var(--ink)}
   .gal-track{position:relative;height:400vh}
   .gal-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
@@ -210,7 +215,7 @@
     .gal-head{top:84px}
   }
 
-  /* ---------- BRAND: TYPOGRAPHY & COLOR (stacked sticky panels) ---------- */
+  /* ========== BRAND: TYPOGRAPHY & COLOR (stacked sticky panels) ========== */
   .brandx{--orange:var(--brand-accent);--peach:var(--brand-secondary);--taupe:var(--brand-muted);--blue:var(--brand-primary-soft);--plum:var(--brand-primary-2);--reseda:var(--brand-primary-soft);--wheat:var(--brand-background);--choc:var(--brand-primary);--stone:var(--brand-secondary-soft);--ink:var(--brand-text);
     position:relative;background:var(--choc)}
   .stack{position:relative}
@@ -293,7 +298,7 @@
     .ccard:hover{flex:1}
   }
 
-  /* ---------- JOURNEY: mask zoom through "M" + shape-revealed z-index stack ---------- */
+  /* ========== JOURNEY: mask zoom through "M" + shape-revealed z-index stack ========== */
   .jr{--ivory:var(--brand-background);--paper:var(--brand-paper);--choc:var(--brand-primary);--orange:var(--brand-accent);--ink:var(--brand-text);position:relative;background:var(--choc)}
   .jr-track{position:relative;height:560vh}
   .jr-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--paper)}
@@ -350,7 +355,7 @@
     .jr .prog{display:none}
   }
 
-  /* ---------- FOOTER (revealed from underneath) ---------- */
+  /* ========== FOOTER (revealed from underneath) ========== */
   .ft-wrap{position:relative;height:100vh;height:100svh;clip-path:polygon(0 0,100% 0,100% 100%,0 100%);background:var(--brand-primary-deep)}
   .ft{position:fixed;left:0;right:0;bottom:0;height:100vh;height:100svh;background:radial-gradient(90% 70% at 85% 0%,var(--brand-primary-2) 0%,var(--brand-primary) 60%);
     color:var(--brand-background);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;
@@ -389,7 +394,7 @@
     .ft-mark{font-size:12.5vw;margin-top:20px}
   }
 
-  /* ---------- SERVICES (Hebrew, RTL, luxury) ---------- */
+  /* ========== SERVICES (Hebrew, RTL, luxury) ========== */
   .svc{--bg:var(--brand-primary);--ivory:var(--brand-background);--gold:var(--brand-secondary);--copper:var(--brand-accent);--line:rgba(191,224,255,.22);--soft:rgba(255,255,255,.62);
     position:relative;background:var(--bg);color:var(--ivory);padding:clamp(90px,12vw,170px) clamp(18px,5vw,80px) clamp(90px,11vw,150px);overflow:hidden}
   .svc-bgnum{position:absolute;top:4%;left:-2%;font-weight:100;font-size:38vw;line-height:.8;color:rgba(191,224,255,.10);filter:url(#ol1);pointer-events:none;direction:ltr;will-change:transform}
@@ -477,7 +482,7 @@
   @media (prefers-reduced-motion:reduce){ .tileS .ic *{transition:none} .svc-panel *{animation-duration:.01s!important} }
 
 
-  /* ---------- INTERIORS MOODBOARD SECTION ---------- */
+  /* ========== INTERIORS MOODBOARD SECTION ========== */
   .mood{--sage:var(--brand-primary-soft);--terra:var(--brand-accent);--cocoa:var(--brand-primary);--cream:var(--brand-background);--olive:var(--brand-primary-soft);--gold:var(--brand-accent);
     position:relative;background:var(--brand-secondary-soft);padding:clamp(80px,11vw,150px) clamp(16px,4vw,64px) clamp(80px,10vw,140px);overflow:hidden}
   .mood-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:clamp(32px,5vw,56px)}
@@ -594,7 +599,7 @@
     .tile,.tile .ri,.split-line > span{transition:none!important}
   }
 
-  /* ---------- ABOUT (Hebrew, RTL, scroll-driven typography) ---------- */
+  /* ========== ABOUT (Hebrew, RTL, scroll-driven typography) ========== */
   .about{--bg:var(--brand-primary-2);--cream:var(--brand-background);--terra:var(--brand-secondary);--copper:var(--brand-accent);--muted:rgba(255,255,255,.14);
     position:relative;background:var(--bg);color:var(--cream);overflow:clip}
   .about-track{position:relative;height:460vh}
@@ -823,14 +828,13 @@ window.EMBEDDED = { khDoor: 'data:image/webp;base64,UklGRt5/AQBXRUJQVlA4WAoAAAAQ
    Leave '' to show the marked placeholder (it tells you the slot name and size).
    ===================================================================================== */
 window.SITE_IMAGES = {
-  hero:     'images/hero-ih4u-seaview-terrace.webp',    // HERO · visible beneath the existing animated curtain · Mediterranean coastal property (Step 03 corrected)
+  hero:     'images/hero-ih4u-sofa-sea.webp',    // HERO · visible beneath the existing animated curtain · Mediterranean coastal property (Step 03 corrected)
   lamp:     'images/section3-sunset-dining-enhanced.webp',                   // INTERIORS · landscape tile (03)
   lounge:   'images/section3-mediterranean-terrace-portrait.webp',                 // INTERIORS · tall photo tile · 1400 × 1800
-  services: [EMBEDDED.svc1, EMBEDDED.svc2, EMBEDDED.svc3, EMBEDDED.svc4, EMBEDDED.svc5, EMBEDDED.svc6, EMBEDDED.svc7, EMBEDDED.services], // SERVICES · panel photo · 1600 × 1200 each (08 still uses the apartment photo)
-                                             //   to give one service its own photo:  services: [EMBEDDED.services, 'images/renovation.jpg', ...]
-                                             //   1 רכישת יד ראשונה · 2 רכישת יד שניה · 3 שיפוצים · 4 איחוד הלוואות
-                                             //   5 תיקים מסורבים · 6 הלוואות סולו · 7 מיחזור משכנתא · 8 משכנתא הפוכה
-  gallery:  [EMBEDDED.gal1, 'images/step4-coast-lounge.webp', 'images/step4-seaside-residences.webp', EMBEDDED.gal4, 'images/step4-coastal-terrace.webp', EMBEDDED.gal3, EMBEDDED.gal7, 'images/step4-open-sea-living.webp'], // GALLERY · frames 01-08 · size printed on each frame
+  services: [EMBEDDED.svc1, EMBEDDED.svc7, EMBEDDED.gal5, EMBEDDED.jr1, EMBEDDED.svc4, EMBEDDED.svc6, EMBEDDED.svc2, EMBEDDED.svc3], // SERVICES · panel photo · 1600 × 1200 each
+                                             //   1 בחינת הפרויקט · 2 בדיקה פיננסית וכושר רכישה · 3 איתור הנכס · 4 הזדמנויות ופרויקטים חדשים
+                                             //   5 מימון ומשכנתאות · 6 ליווי מנהלי ומשפטי · 7 ליווי עד קבלת המפתח · 8 אחרי הרכישה
+  gallery:  [EMBEDDED.jr1, EMBEDDED.lamp, 'images/step4-seaside-residences.webp', EMBEDDED.lounge, 'images/section3-beachfront-enhanced.webp', 'images/step4-coastal-home.webp', EMBEDDED.services, 'images/step4-open-sea-living.webp'], // GALLERY · frames 01-08 · size printed on each frame
   journey:  ['images/journey-premium-seaside-v2.webp', 'images/journey-premium-living-v2.webp', 'images/journey-premium-coast-v2.webp']                     // JOURNEY · 1 חלום (also fills the big M) · 2 תכנון · 3 מפתח · 2400 × 1600 each
 };
 
@@ -855,7 +859,7 @@ window.imgOr = function (src, slot, title, w, h, bg, fg) {
   return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 };
 </script>
-<link rel="preload" as="image" href="images/hero-ih4u-seaview-terrace.webp" />
+<link rel="preload" as="image" href="images/hero-ih4u-sofa-sea.webp" />
 <style id="ih4u-step6-services">
 /* IH4U STEP 06: services-only visual refinement; all other sections unchanged. */
 #services .tileS {
@@ -907,8 +911,8 @@ window.imgOr = function (src, slot, title, w, h, bg, fg) {
 /* palette card click: the spot that uses the color pulses */
 @keyframes ih4uColorHit{0%,100%{box-shadow:0 0 0 0 rgba(11,31,58,0)}35%{box-shadow:0 0 0 6px #0b1f3a}}
 .tile.ih4u-color-hit{animation:ih4uColorHit 1.1s ease 2}
-/* Angel 15-Nov: more sea in the hero - on phones, frame the right side (tree + open sea) instead of the middle. */
-@media (max-width:700px){ #sceneImg {object-position:70% 50%;} }
+/* 16-Nov: the sofa and sea hero photo - on phones, frame the terrace edge and the sea. */
+@media (max-width:700px){ #sceneImg {object-position:52% 50%;} }
 </style>
 <style>
 
@@ -942,6 +946,317 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 .ih4u-logo-swatches{display:flex;justify-content:center;gap:6px;margin-top:12px}.ih4u-logo-swatches i{width:18px;height:18px;border-radius:50%;display:block;border:1px solid #e4e5e8}
 .ih4u-logo-foot{font-size:12px;color:#60717d;margin:16px 0 0;line-height:1.5}
 @media(max-width:740px){.ih4u-logo-grid{grid-template-columns:1fr}.ih4u-logo-sheet{padding:22px 16px}.ih4u-logo-card svg{max-width:320px}.ih4u-logo-open{left:10px;bottom:10px}}
+</style>
+<style id="ih4u-launch-16nov">
+/* IH4U launch homepage (16-Nov): review mode, palette 3 locked, Assistant, real logo, real copy, new blocks. */
+
+/* 1. Review tools and the brand section show only with ?review=1 */
+html:not(.ih4u-review) .ih4u-palette-panel,
+html:not(.ih4u-review) #ih4u-font-panel,
+html:not(.ih4u-review) #ih4uLogoOpen,
+html:not(.ih4u-review) #ih4uLogoDialog,
+html:not(.ih4u-review) #brand{display:none!important}
+
+/* 2. Palette 3, tuned and locked. The review panel can still switch palettes at runtime. */
+:root{
+  --brand-primary:#4097DB;--brand-primary-deep:#124C7E;--brand-primary-2:#4097DB;--brand-primary-3:#4097DB;--brand-primary-soft:#4097DB;
+  --brand-ocean:#4097DB;--brand-ocean-light:#4097DB;--brand-sun:#F6CF49;--brand-sun-deep:#F6CF49;
+  --brand-secondary:#F6CF49;--brand-accent:#F6CF49;--brand-accent-dark:#F6CF49;--brand-accent-light:#F6CF49;
+  --brand-emerald:#42C4C3;--brand-turquoise:#42C4C3;--brand-orange:#4097DB;--brand-purple:#42C4C3;
+  --home-bg:#F2B7A6;
+  --ih4u-navy:#0B1F3A;--ih4u-blue-ink:#1B5F9E;--ih4u-gold:#D4AF37;--ih4u-line:#D5E3F0;--ih4u-paper:#F5FAFF;--ih4u-sun-hover:#EFC02C;
+  --ih4u-gold-shine:linear-gradient(135deg,#B8892B 0%,#F1D27A 45%,#D4AF37 70%,#A9781F 100%);
+}
+.tst{--gold:#D4AF37}.svc{--copper:#D4AF37}.gal{--gold:#4097DB}
+.mood{--terra:#F2B7A6;--gold:#D4AF37;--sage:#42C4C3;--olive:#42C4C3}
+.about{--bg:#42C4C3;--terra:#F6CF49;--copper:#D4AF37}
+.btn.solid:hover,.jr .fin .cta .p:hover,.ft-top .act .p:hover{background:var(--ih4u-sun-hover);border-color:var(--ih4u-sun-hover)}
+
+/* 3. Hero: logo, nav, headline block, scrim */
+.nav{gap:20px}
+.nav .brand{flex:none;display:block;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,0);transition:background-color .5s ease,box-shadow .5s ease}
+.nav .brand img{display:block;height:52px;width:auto}
+.hero.lifted .nav .brand{background:rgba(255,255,255,.96);box-shadow:0 8px 28px rgba(8,24,48,.22)}
+.nav ul{gap:clamp(14px,1.75vw,28px);font-size:clamp(13px,1.02vw,15px);font-weight:600;white-space:nowrap}
+.nav ul a{opacity:1}
+.hero.lifted .nav ul a{text-shadow:0 1px 12px rgba(8,24,48,.6)}
+.nav .btn{flex:none;white-space:nowrap;font-weight:700}
+@media (max-width:1180px){.nav ul{display:none}}
+@media (max-width:700px){.nav .brand{padding:5px 9px;border-radius:8px}.nav .brand img{height:40px}}
+
+.scene::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .8s ease;
+  background:linear-gradient(180deg,rgba(9,27,52,.62) 0%,rgba(9,27,52,.22) 15%,rgba(9,27,52,0) 30%,rgba(9,27,52,0) 44%,rgba(9,27,52,.5) 72%,rgba(9,27,52,.86) 100%)}
+.hero.lifted .scene::before{opacity:1}
+.contact a{text-shadow:0 1px 12px rgba(8,24,48,.6)}
+
+.reveal{left:clamp(20px,5vw,80px);right:clamp(20px,5vw,80px);bottom:clamp(24px,4.6vh,46px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:end;gap:24px 48px}
+.reveal .eyebrow{font-size:clamp(14px,1.15vw,17px);font-weight:700;letter-spacing:.01em;opacity:1;margin-bottom:14px;color:#fff}
+.reveal h1{font-family:var(--font-head);font-weight:300;font-size:clamp(38px,5.4vw,80px);line-height:1.05;letter-spacing:-.02em;max-width:10em;text-wrap:balance;text-shadow:0 2px 26px rgba(8,24,48,.4)}
+.reveal h1 b{font-weight:800}
+.reveal .sub{margin-top:16px;max-width:48ch;font-size:clamp(15px,1.3vw,19px);line-height:1.6;font-weight:500;color:#fff}
+.reveal .meta{align-items:flex-end;gap:14px}
+.reveal .cta{flex-wrap:wrap;justify-content:flex-end}
+.reveal .cta .btn{height:54px;padding:0 26px;font-size:15.5px;font-weight:700}
+.reveal .cta .btn:not(.solid){background:rgba(9,27,52,.42);border-color:#fff;color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.reveal .cta .btn:not(.solid):hover{background:#fff;color:var(--ih4u-navy);border-color:#fff}
+.reveal .trust{grid-column:1/-1;list-style:none;display:flex;flex-wrap:wrap;gap:8px 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.4);font-size:clamp(13px,1.05vw,15.5px);font-weight:600;color:#fff}
+.reveal .trust li{display:flex;align-items:center;padding-inline-end:22px;margin-inline-end:22px;border-inline-end:1px solid rgba(255,255,255,.4)}
+.reveal .trust li:last-child{padding-inline-end:0;margin-inline-end:0;border-inline-end:0}
+.reveal .trust li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;margin-inline-end:10px;background:var(--ih4u-gold-shine)}
+@media (max-width:860px){
+  .reveal{grid-template-columns:minmax(0,1fr);gap:14px;bottom:20px}
+  .reveal h1{font-size:clamp(34px,9.6vw,46px)}
+  .reveal .sub{margin-top:10px;font-size:15px;line-height:1.5}
+  .reveal .meta{align-items:stretch}
+  .reveal .cta{flex-direction:column;gap:10px}
+  .reveal .cta .btn{justify-content:center;height:50px}
+  .reveal .trust{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;padding-top:12px;font-size:12.5px;line-height:1.3}
+  .reveal .trust li{padding:0;margin:0;border:0;align-items:flex-start}
+  .reveal .trust li::before{margin-top:4px}
+}
+
+/* 4. Services: readable small text on the blue, longer titles */
+#services .svc-eyebrow{color:#fff;font-weight:700}
+#services .svc-sub p{color:#fff;max-width:38ch}
+#services .svc-panel h5{font-size:clamp(27px,2.9vw,46px);line-height:1.1;letter-spacing:-.02em}
+#services .svc-panel p{color:#fff}
+#services .svc-panel .count{color:#fff}
+#services .svc-panel .shade{background:linear-gradient(0deg,rgba(7,30,60,.96) 0%,rgba(7,30,60,.8) 48%,rgba(7,30,60,.12) 84%)}
+#services .tileS h4{font-size:clamp(16px,1.3vw,20px);line-height:1.25}
+@media (max-width:900px){
+  #services.svc.open .svc-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:96px}
+  #services.svc.open .tileS h4{font-size:14px;line-height:1.25}
+  #services.svc.open .tileS .ic{width:26px;height:26px}
+}
+
+/* 5. Bento: emblem tile, pillar texts, counter, numbers strip */
+.mood-head .eyebrow{font-weight:700;color:var(--ih4u-blue-ink)}
+.mood-head h3{font-size:clamp(34px,4.6vw,72px);line-height:1.04;letter-spacing:-.03em;color:var(--ih4u-navy)}
+.mood-head h3 b{font-weight:800}
+.mood-head.in .split-line:nth-child(3) > span{transition-delay:.22s}
+.mood-head .side{color:var(--ih4u-navy);font-size:16px}
+.brandmark .bm-lockup{position:absolute;right:8%;left:8%;top:7%;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.brandmark .bm-lockup img{display:block;width:clamp(78px,7.4vw,118px);height:auto;filter:drop-shadow(0 4px 14px rgba(0,0,0,.4))}
+.brandmark .bm-lockup b{max-width:7.4em;font-family:var(--font-head);font-weight:600;font-size:clamp(22px,2.2vw,34px);line-height:1.1;letter-spacing:-.01em;color:#fff;direction:ltr;text-align:right;text-shadow:0 2px 16px rgba(0,0,0,.45)}
+#mood .t-mirror::after{content:"";position:absolute;inset:0 0 36% 0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(9,40,78,.8) 0%,rgba(9,40,78,.52) 58%,rgba(9,40,78,0) 100%)}
+#mood .t-mirror .sky-msg span{font-size:clamp(13.5px,1.02vw,15.5px);line-height:1.5;font-weight:500}
+#mood .t-terra .count strong{display:block;font-size:clamp(26px,2.75vw,42px);letter-spacing:-.03em;line-height:1;white-space:nowrap}
+#mood .t-terra .count strong span{font-size:inherit;font-weight:inherit}
+#mood .t-terra .count strong .cur{font-size:.62em;font-weight:700}
+#mood .t-terra .count .lbl{display:block;margin-top:10px;font-size:clamp(13px,1.05vw,15.5px);font-weight:700;line-height:1.35;color:var(--ih4u-navy)}
+#mood .t-terra .foot{color:var(--ih4u-navy);font-size:13.5px;font-weight:600}
+#mood .t-lamp .lamp-copy{max-width:min(470px,58%)}
+#mood .t-lamp .lamp-copy h4{font-size:clamp(26px,3vw,46px);text-wrap:balance}
+#mood .t-lamp .lamp-copy p{font-size:clamp(14px,1.25vw,19px);line-height:1.5}
+@media (max-width:600px){
+  #mood .t-lamp .lamp-copy{max-width:74%}
+  #mood .t-lamp .lamp-copy h4{font-size:24px}
+  #mood .t-lamp .lamp-copy p{font-size:13.5px}
+}
+@media (max-width:560px){
+  #mood .t-terra{padding:14px}
+  #mood .t-terra .count{left:14px;right:14px;top:16px}
+  #mood .t-terra .count strong{font-size:23px}
+  #mood .t-terra .foot{left:14px;right:14px;bottom:14px;font-size:12.5px}
+  .brandmark .bm-lockup b{font-size:24px}
+}
+
+.nums{position:relative;max-width:1320px;margin:clamp(36px,5vw,72px) auto 0;padding:clamp(28px,3.4vw,48px) clamp(14px,3vw,44px) clamp(30px,3.6vw,52px);background:#fff;border:1px solid var(--ih4u-line);border-radius:6px}
+.nums::before{content:"";position:absolute;top:-1px;right:-1px;left:-1px;height:4px;background:var(--ih4u-gold-shine);border-radius:6px 6px 0 0}
+.nums h3{margin-bottom:clamp(22px,2.8vw,40px);font-size:clamp(22px,2.3vw,36px);font-weight:700;line-height:1.15;letter-spacing:-.015em;text-align:center;color:var(--ih4u-navy)}
+.nums ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(24px,2.8vw,40px) 0}
+.nums li{flex:0 0 25%;min-width:0;padding:0 clamp(8px,1.3vw,20px);text-align:center}
+.nums li.w{flex-basis:33.333%}
+.nums .fig{display:block;font-family:var(--font-head);line-height:1.05;color:var(--ih4u-navy)}
+.nums .fig .g{display:inline-block;white-space:nowrap;font-weight:800;font-size:clamp(34px,4vw,60px);letter-spacing:-.03em;background:var(--ih4u-gold-shine);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 0 rgba(110,76,10,.55))}
+.nums .fig .g.mid{font-size:clamp(28px,3.1vw,46px)}
+.nums .fig .g.he{font-size:clamp(28px,3.1vw,46px);letter-spacing:-.02em;line-height:1.25}
+.nums .fig .u{font-weight:700;font-size:clamp(16px,1.5vw,22px);color:var(--ih4u-navy)}
+.nums .lbl{display:block;max-width:26ch;margin:10px auto 0;font-size:clamp(14px,1.05vw,15.5px);line-height:1.45;color:var(--ih4u-navy)}
+@media (max-width:900px){.nums li{flex-basis:50%}.nums li.w{flex-basis:100%}}
+
+/* 6. About: navy copy on the turquoise, white topic chips */
+#about .about-index{opacity:1;color:var(--ih4u-navy);font-weight:700}
+#about .about-text{color:var(--ih4u-navy);font-weight:500}
+#about .about-text .w.hl{color:var(--ih4u-navy);font-weight:800;background:linear-gradient(transparent 60%,#F6CF49 60%,#F6CF49 94%,transparent 94%)}
+#about .chips li{background:#fff;border-color:#fff;color:var(--ih4u-navy)}
+#about .chips li button{font-weight:700}
+#about .chips li.solid{background:var(--brand-sun);border-color:var(--brand-sun);color:var(--ih4u-navy)}
+#about .chips li:not(.solid):hover{background:#E9F8F8}
+
+/* 7. Gallery as projects, flagship block */
+.gal-head{align-items:flex-start}
+.gal-head > div:first-child{flex:1;min-width:0}
+.gal-head .eyebrow{color:var(--ih4u-blue-ink);font-weight:700;letter-spacing:.08em}
+.gal-head h2{font-weight:300;font-size:clamp(27px,3.4vw,50px);line-height:1.1;letter-spacing:-.02em}
+.gal-head h2 b{font-weight:800}
+.gal-head .intro{margin-top:12px;max-width:96ch;font-size:clamp(13.5px,1.1vw,16.5px);line-height:1.6;color:var(--ih4u-navy)}
+.gal-head .ctr{flex:none}
+.gal-head{top:clamp(84px,12vh,130px)}
+.gal-row{padding-top:clamp(190px,30vh,290px)}
+.g-card.tall{height:46vh}.g-card.wide{height:34vh}.g-card.sq{height:40vh}
+.g-card.up{margin-bottom:7vh}.g-card.down{margin-top:10vh}
+.gal-prog{bottom:14px}
+.g-card figcaption{color:var(--ih4u-navy)}
+@media (max-width:700px){
+  .gal-head{top:78px}
+  .gal-head .ctr{position:absolute;left:0;top:-6px;font-size:24px}
+  .gal-row{padding-top:clamp(250px,34vh,300px)}
+  .g-card.tall{height:42vh}.g-card.wide{height:28vh}.g-card.sq{height:34vh}
+  .g-card.up{margin-bottom:8vh}.g-card.down{margin-top:10vh}
+}
+.flag{position:relative;background:#fff;color:var(--ih4u-navy);padding:clamp(36px,5vw,80px) clamp(20px,5vw,80px) clamp(64px,8vw,120px)}
+.flag *{box-sizing:border-box}
+.flag-in{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"head media" "cta facts";gap:clamp(24px,3vw,44px) clamp(28px,4.5vw,72px);align-items:start}
+.flag-head{grid-area:head}.flag-media{grid-area:media}.flag-cta{grid-area:cta}.flag-facts{grid-area:facts}
+.flag-eyebrow{display:inline-block;padding:6px 12px;margin-bottom:18px;background:var(--ih4u-navy);color:#fff;font-size:13.5px;font-weight:700;letter-spacing:.04em;border-radius:2px}
+.flag h3{font-family:var(--font-head);font-size:clamp(36px,4.6vw,68px);font-weight:800;line-height:1.02;letter-spacing:-.03em;color:var(--ih4u-navy)}
+.flag h3 small{display:block;margin-top:12px;font-size:clamp(17px,1.5vw,23px);font-weight:700;letter-spacing:0;line-height:1.3;color:var(--ih4u-blue-ink)}
+.flag .lead{margin-top:20px;max-width:58ch;font-size:clamp(16px,1.25vw,19px);line-height:1.7}
+.flag-media{position:relative;margin:0;aspect-ratio:3/2;border-radius:4px;overflow:hidden;background:#DCE8F5}
+.flag-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:38% 50%}
+.flag-facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(18px,2.4vw,36px)}
+.flag-facts li{padding:14px 0;border-top:1px solid var(--ih4u-line);font-size:15px;line-height:1.55}
+.flag-facts li b{display:block;margin-bottom:3px;font-size:15.5px;font-weight:800;color:var(--ih4u-blue-ink)}
+.flag-why{position:relative;padding:20px 24px;background:var(--ih4u-paper)}
+.flag-why::before{content:"";position:absolute;top:0;bottom:0;inset-inline-start:0;width:4px;background:var(--ih4u-gold-shine)}
+.flag-why h4{margin-bottom:8px;font-size:19px;font-weight:800;color:var(--ih4u-navy)}
+.flag-why p{font-size:clamp(15.5px,1.2vw,18px);line-height:1.65}
+.flag-cta .ih4u-btn{margin-top:22px}
+@media (max-width:900px){
+  .flag-in{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "media" "facts" "cta"}
+  .flag-facts{grid-template-columns:minmax(0,1fr)}
+}
+
+/* 8. Testimonials: two real ones, long quotes, initials */
+#testimonials .tst-title{font-family:var(--font-head);font-size:clamp(23px,2.3vw,36px);font-weight:800;line-height:1.14;letter-spacing:-.015em;color:var(--ih4u-navy)}
+#testimonials .tst-mark{position:static;display:block;height:.6em;overflow:hidden;margin:0 0 clamp(10px,1.2vw,16px);font-size:clamp(84px,9vw,150px);line-height:1;text-align:right;opacity:1;
+  background:var(--ih4u-gold-shine);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+#testimonials .tst-scroll-slide .tst-quote{max-width:66ch;font-weight:500;font-size:clamp(16.5px,1.5vw,22px);line-height:1.72;letter-spacing:0;color:var(--ih4u-navy);overflow-wrap:break-word}
+#testimonials .tst-author .av{border:0;background:var(--ih4u-gold-shine);color:var(--ih4u-navy);font-weight:800;font-size:24px}
+#testimonials .tst-author b{color:var(--ih4u-navy)}
+#testimonials .tst-author span{color:var(--ih4u-navy);opacity:.8}
+#testimonials .tst-slide-btn{border-color:var(--ih4u-navy);color:var(--ih4u-navy)}
+#testimonials .tst-slide-btn:hover,#testimonials .tst-slide-btn:focus-visible{background:var(--brand-sun);border-color:var(--brand-sun);color:var(--ih4u-navy)}
+#testimonials .tst-side .num small{color:var(--ih4u-navy)}
+@media (max-width:860px){
+  #testimonials .tst-scroll-slide .tst-quote{font-size:15.5px;line-height:1.62}
+  #testimonials .tst-side{align-items:center}
+  #testimonials .tst-side .num{font-size:44px}
+}
+
+/* 9. Journey close: blue to navy, no green */
+.jr .fin{background:radial-gradient(120% 90% at 20% 30%,var(--ih4u-fin-a,#3A8ED2) 0%,var(--ih4u-fin-b,#0F3A63) 60%)}
+.jr .fin .l1{color:#fff}
+.jr .fin .cta .s:hover{background:#fff;color:var(--ih4u-navy)}
+.jr .mcopy .eyebrow,.jr .mcopy .hint{color:var(--ih4u-navy)}
+.jr .mcopy .hint{position:static;white-space:normal}
+
+/* 10. Process: ten steps in four phases */
+.ih4u-process .ih4u-process-eyebrow{color:var(--ih4u-blue-ink)}
+.ih4u-process .ih4u-process-head{max-width:1080px}
+.ih4u-process h2{text-wrap:balance}
+.ih4u-process .ih4u-process-intro{color:var(--ih4u-navy)}
+.ih4u-process .ih4u-process-copy p{color:var(--ih4u-navy)}
+.ih4u-process .ih4u-process-phase{display:block;margin-bottom:8px;font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--ih4u-blue-ink)}
+.ih4u-process .ih4u-process-disclaimer{color:var(--ih4u-navy);opacity:.8}
+.ih4u-process .ih4u-process-cta{display:flex;justify-content:center;margin:26px auto 0;text-align:center}
+
+/* 11. New blocks: shared parts */
+.ih4u-block{position:relative;background:#fff;color:var(--ih4u-navy);padding:clamp(64px,8vw,120px) clamp(20px,5vw,80px)}
+.ih4u-block *{box-sizing:border-box}
+.ih4u-wrap{max-width:1200px;margin:0 auto}
+.ih4u-eyebrow{margin-bottom:14px;font-size:13.5px;font-weight:800;letter-spacing:.08em;color:var(--ih4u-blue-ink)}
+.ih4u-block h2{font-family:var(--font-head);font-size:clamp(31px,4.2vw,58px);font-weight:800;line-height:1.1;letter-spacing:-.025em;color:var(--ih4u-navy)}
+.ih4u-rule{display:block;width:76px;height:4px;margin:20px 0 22px;border-radius:2px;background:var(--ih4u-gold-shine)}
+.ih4u-lead{max-width:56ch;font-size:clamp(17px,1.4vw,21px);line-height:1.7;color:var(--ih4u-navy)}
+.ih4u-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:8px 28px;border-radius:2px;border:1px solid var(--brand-sun);background:var(--brand-sun);color:var(--ih4u-navy);
+  font:700 16px/1.25 var(--font-body);letter-spacing:.01em;text-align:center;text-decoration:none;cursor:pointer;transition:background-color .25s,border-color .25s,color .25s}
+.ih4u-btn:hover{background:var(--ih4u-sun-hover);border-color:var(--ih4u-sun-hover)}
+.ih4u-btn.line{background:#fff;border-color:var(--ih4u-navy);color:var(--ih4u-navy)}
+.ih4u-btn.line:hover{background:var(--ih4u-navy);color:#fff}
+.ih4u-btn svg{flex:none;width:20px;height:20px}
+.ih4u-micro{margin-top:12px;font-size:14px;line-height:1.5;color:var(--ih4u-navy);opacity:.8}
+.ih4u-block a:focus-visible,.ih4u-block button:focus-visible,.flag a:focus-visible,.ih4u-process a:focus-visible{outline-color:var(--ih4u-blue-ink)}
+
+/* 12. Purchasing power block */
+.ih4u-calc-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,84px);align-items:center}
+.ih4u-calc .ih4u-btn{margin-top:28px}
+.ih4u-calc-photo{position:relative;margin:0;aspect-ratio:4/5;max-height:540px;justify-self:stretch;border-radius:4px;overflow:hidden;background:#DCE8F5}
+.ih4u-calc-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.ih4u-calc-photo::after{content:"";position:absolute;right:0;left:0;bottom:0;height:5px;background:var(--ih4u-gold-shine)}
+@media (max-width:860px){.ih4u-calc-in{grid-template-columns:minmax(0,1fr)}.ih4u-calc-photo{aspect-ratio:4/3;max-height:none}}
+
+/* 13. Documents and guides */
+.ih4u-docs{background:var(--ih4u-paper)}
+.ih4u-docs-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(28px,4vw,48px)}
+.ih4u-doc{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:clamp(22px,2.6vw,38px);background:#fff;border:1px solid var(--ih4u-line);border-radius:4px}
+.ih4u-doc .ic{width:46px;height:46px;color:var(--ih4u-blue-ink)}
+.ih4u-doc .ic *{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ih4u-doc h3{font-size:clamp(19px,1.7vw,25px);font-weight:800;line-height:1.3;color:var(--ih4u-navy)}
+.ih4u-doc p{font-size:16px;line-height:1.55;color:var(--ih4u-navy)}
+.ih4u-doc .tag{display:inline-block;padding:5px 12px;border-radius:2px;background:var(--ih4u-navy);color:#fff;font-size:13px;font-weight:700;letter-spacing:.04em}
+.ih4u-doc .ih4u-btn{margin-top:auto}
+@media (max-width:760px){.ih4u-docs-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 14. Contact */
+.ih4u-contact-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.ih4u-slogan{margin-top:24px;padding-inline-start:18px;border-inline-start:4px solid var(--ih4u-gold);font-size:clamp(19px,1.7vw,25px);font-weight:800;line-height:1.4;color:var(--ih4u-navy)}
+.ih4u-direct{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.ih4u-mail{margin-top:20px;font-size:16.5px;color:var(--ih4u-navy)}
+.ih4u-mail a{color:var(--ih4u-blue-ink);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.ih4u-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 18px;padding:clamp(20px,2.6vw,36px);background:var(--ih4u-paper);border:1px solid var(--ih4u-line);border-radius:4px}
+.ih4u-form .f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ih4u-form .f.full{grid-column:1/-1}
+.ih4u-form label{font-size:14.5px;font-weight:700;color:var(--ih4u-navy)}
+.ih4u-form input,.ih4u-form select,.ih4u-form textarea{width:100%;min-height:48px;padding:10px 12px;border:1px solid #8FA8C0;border-radius:2px;background:#fff;color:#0B1F3A;font:500 16px/1.4 var(--font-he)}
+.ih4u-form select option{background:#fff;color:#0B1F3A}
+.ih4u-form input[type="tel"]{direction:ltr;text-align:right}
+.ih4u-form textarea{min-height:112px;resize:vertical}
+.ih4u-form ::placeholder{color:rgba(11,31,58,.5)}
+.ih4u-form input:focus,.ih4u-form select:focus,.ih4u-form textarea:focus{outline:2px solid var(--ih4u-blue-ink);outline-offset:1px;border-color:var(--ih4u-blue-ink)}
+.ih4u-form [aria-invalid="true"]{border-color:#B3261E;box-shadow:0 0 0 1px #B3261E}
+.ih4u-form .err{font-size:13.5px;font-weight:700;line-height:1.4;color:#B3261E}
+.ih4u-form .ih4u-btn{grid-column:1/-1;width:100%}
+.ih4u-form .status{grid-column:1/-1;font-size:14.5px;font-weight:600;line-height:1.5;color:var(--ih4u-navy)}
+.ih4u-form .status a{color:var(--ih4u-blue-ink);font-weight:800}
+.ih4u-form [hidden]{display:none!important}
+@media (max-width:860px){.ih4u-contact-in{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.ih4u-form{grid-template-columns:minmax(0,1fr)}.ih4u-direct .ih4u-btn{width:100%;padding:8px 14px;font-size:15px}}
+
+/* 15. Footer: navy, dark lockup, real contacts, IH4U mark */
+.ft-wrap{background:#0B2A4A}
+#ft{background:radial-gradient(90% 70% at 85% 0%,#1B5083 0%,#0B2A4A 62%);padding-top:clamp(52px,7.5vh,92px)}
+#ft .ft-top{align-items:center}
+.ft-brandline{display:flex;flex-direction:column;align-items:flex-start;gap:12px;max-width:600px}
+.ft-brandline img{display:block;height:clamp(50px,6.4vh,66px);width:auto}
+.ft-brandline .tagline{font-family:var(--font-head);font-size:clamp(17px,1.5vw,23px);font-weight:500;line-height:1.3;color:#fff;direction:ltr}
+.ft-brandline .desc{max-width:54ch;font-size:15.5px;line-height:1.6;color:#fff}
+#ft .ft-top .act{align-items:center;justify-content:flex-end}
+#ft .ft-top .act .p:hover{color:var(--brand-on-sun)}
+#ft .ft-top .act .s{border-color:#fff}
+#ft .ft-top .act .s:hover{background:#fff;color:var(--ih4u-navy)}
+#ft .ft-cols h4{color:var(--brand-sun);font-weight:700}
+#ft .ft-cols a,#ft .ft-cols li{color:#fff;font-weight:400}
+#ft .ft-cols a::after{background:var(--brand-sun)}
+#ft .ft-mark{direction:ltr;gap:0;font-size:min(13vw,20vh)}
+#ft .ft-mark .m{margin:0}
+#ft .ft-mark .ch{background:var(--ih4u-gold-shine);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+#ft .ft-legal{color:#fff}
+#ft .ft-legal .warn{color:rgba(255,255,255,.82)}
+#ft .ft-up{flex:none;color:#fff;border-color:rgba(255,255,255,.7)}
+#ft .ft-up:hover{background:#fff;color:var(--ih4u-navy)}
+@media (max-height:780px) and (min-width:901px){#ft .ft-mark{display:none}}
+@media (max-width:900px){
+  #ft{padding-top:56px}
+  #ft .ft-top .act{justify-content:flex-start}
+  #ft .ft-cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #ft .ft-mark{font-size:22vw}
+}
+@media (max-width:520px){#ft .ft-top .act a{flex:1 1 100%;justify-content:center}}
+/* 16. Small readability fixes */
+.lb .bar span{opacity:.85}
+/*ih4u-launch-end*/
 </style>
 </head>
 <body>
@@ -981,38 +1296,37 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     <div class="scene">
       <!-- IMAGE SLOT: SITE_IMAGES.hero (set at the top of the file) -->
       <img id="sceneImg"
-           alt="מרפסת פנטהאוז מול הים התיכון בשקיעה, עם קו החוף ובנייני העיר" />
+           alt="מרפסת עם פינת ישיבה ושולחן אוכל מול הים התיכון בשקיעה" />
     </div>
 
     <!-- 2. Contact pills under the gathered swag -->
-    <div class="contact" id="contact">
-      <a href="tel:+972500000000">
+    <div class="contact" id="heroContact">
+      <a href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener" aria-label="וואטסאפ למלכי, 054-499-1022">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-        <span dir="ltr">050-000-0000</span>
+        <span dir="ltr">054-499-1022</span>
       </a>
-      <a class="site" href="#">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-        <span dir="ltr">www.m-mortgage.co.il</span>
+      <a class="site" href="mailto:israelh4u@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <span dir="ltr">israelh4u@gmail.com</span>
       </a>
     </div>
 
     <!-- 3. Headline shown after curtain lifts away on scroll -->
     <div class="reveal" id="reveal">
-      <div>
-        <div class="eyebrow">M המשכנתאות · ייעוץ משכנתאות ומימון</div>
-        <h2>הבית שלכם, <b>מתחיל כאן.</b></h2>
+      <div class="reveal-main">
+        <div class="eyebrow">למשפחות דוברות צרפתית שרוכשות נכס בישראל</div>
+        <h1>הבית שלכם בישראל <b>מתחיל כאן</b></h1>
+        <p class="sub">ליווי וייעוץ מקצה לקצה, מהחלום ועד קבלת המפתח. איתור נכס, מימון משכנתא וליווי אישי, הכול תחת קורת גג אחת.</p>
       </div>
       <div class="meta">
-        <div class="specs">
-          <span><strong>ליווי אישי</strong>מהבדיקה ועד הכסף</span>
-          <span><strong>כל הבנקים</strong>אנחנו מולם, בשבילכם</span>
-          <span><strong>חיסכון</strong>בתנאים ובריבית</span>
-        </div>
         <div class="cta">
-          <a class="btn" href="#about">מי אנחנו</a>
-          <a class="btn solid" href="#">לבדיקת זכאות חינם</a>
+          <a class="btn solid" href="#calc">בדקו את כושר הרכישה שלכם</a>
+          <a class="btn" href="#contact">קבעו פגישת ייעוץ</a>
         </div>
       </div>
+      <ul class="trust" aria-label="למה אנחנו">
+        <li>צוות דובר צרפתית</li><li>מתווכת נדל"ן מוסמכת</li><li>כעשר שנות ניסיון במשכנתאות</li><li>עבודה מול כל הבנקים הגדולים בישראל</li>
+      </ul>
     </div>
 
     <!-- 4. The curtain (drawn every frame by JS) -->
@@ -1078,12 +1392,12 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 
     <div class="hint" id="hint">משכו בחבל</div>
 
-    <nav class="nav">
-      <a class="brand" href="#top"><b><span>M</span> המשכנתאות</b><small>ייעוץ משכנתאות · גיוס אשראי · מימון</small></a>
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a class="brand" href="#top"><img src="images/logo-ih4u-on-light.png" alt="IH4U Israel Home For You" width="528" height="173"></a>
       <ul>
-        <li><a href="#services">השירותים שלנו</a></li><li><a href="#">גיוס אשראי</a></li><li><a href="#">מימון</a></li><li><a href="#about">אודות</a></li><li><a href="#">צור קשר</a></li>
+        <li><a href="#top">דף הבית</a></li><li><a href="#about">אודות</a></li><li><a href="#services">השירותים שלנו</a></li><li><a href="#gallery">פרויקטים והזדמנויות</a></li><li><a href="#calc">מחשבון כושר רכישה</a></li><li><a href="#docs">מסמכים ומדריכים</a></li><li><a href="#contact">צור קשר</a></li>
       </ul>
-      <a class="btn" href="#">קביעת פגישת ייעוץ</a>
+      <a class="btn solid" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener">לתיאום פגישת ייעוץ</a>
     </nav>
   </div>
 </section>
@@ -1092,13 +1406,13 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 <section class="svc" id="services" dir="rtl" lang="he">
   <div class="svc-bgnum" id="svcNum" aria-hidden="true">08</div>
   <header class="svc-head">
-    <div class="svc-eyebrow"><i></i>השירותים שלנו</div>
+    <div class="svc-eyebrow"><i></i>ליווי וייעוץ מקצה לקצה</div>
     <h2 class="svc-title">
-      <span class="row" data-dir="1">מה אנחנו</span>
-      <span class="row" data-dir="-1"><b>עושים</b><span class="q">?</span></span>
+      <span class="row" data-dir="1">השירותים</span>
+      <span class="row" data-dir="-1"><b>שלנו</b></span>
     </h2>
     <div class="svc-sub">
-      <p>עושים הכל כדי שהמשכנתא שלכם תהיה <b>משתלמת במיוחד.</b></p>
+      <p>איתור נכס, מימון משכנתא וליווי אישי, <b>הכול תחת קורת גג אחת.</b></p>
     </div>
     <div class="svc-rule"><span id="svcRule"></span></div>
   </header>
@@ -1115,7 +1429,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
           <div class="count line"><span id="svcCount">01 / 08</span></div>
           <h5 class="line"><span id="svcTitle"></span></h5>
           <p class="line"><span id="svcText"></span></p>
-          <a class="cta line" href="#"><span style="display:inline-flex;align-items:center;gap:14px">לבדיקת התאמה <i></i></span></a>
+          <a class="cta line" href="#contact"><span style="display:inline-flex;align-items:center;gap:14px">קבעו פגישת ייעוץ <i></i></span></a>
         </div>
       </div>
     </aside>
@@ -1127,12 +1441,12 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 <section class="mood" id="mood" dir="rtl" lang="he">
   <header class="mood-head" id="moodHead">
     <div>
-      <div class="eyebrow">השראה לבית הבא</div>
-      <h3><span class="split-line"><span>בתים שאפשר</span></span><span class="split-line"><span><em>להרגיש</em>, <b>לא רק לראות.</b></span></span></h3>
+      <div class="eyebrow">שלושת עמודי התווך שלנו</div>
+      <h3><span class="split-line"><span>כל מה שצריך כדי</span></span> <span class="split-line"><span>לקנות בישראל,</span></span> <span class="split-line"><span><b>במקום אחד</b></span></span></h3>
     </div>
     <div class="side">
-      מאחורי כל משכנתא עומד בית אמיתי: חומרים חמים, אור טבעי ופינות שמחכות לכם. אנחנו דואגים למימון, כדי שאתם תוכלו להתמקד בחלום.
-      <br><a href="#services">לשירותים שלנו ←</a>
+      איתור הנכס שמתאים לחלום שלכם. דירה חדשה מקבלן או יד שנייה, למגורים או להשקעה, בעיר שתבחרו.
+      <br><a href="#services">לפרטים נוספים ←</a>
     </div>
   </header>
 
@@ -1142,9 +1456,8 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
       <div class="ri"><div class="layer img" data-par=".16"><img
         id="loungeImg" data-slot="lounge"
         alt="מרפסת יוקרתית מול הים התיכון עם אבן טבעית ונוף לים בשקיעה" loading="lazy"></div></div>
-      <div class="layer brandmark" data-par="-.06" data-mouse="22"><span><i class="bm-m">M</i><br>המשכנתאות</span></div>
-      <div class="tag">01 · סלון</div>
-      <a class="mood-nav-link" href="#gallery" aria-label="לצפייה בגלריית הנכסים">לגלריית הנכסים <span aria-hidden="true">←</span></a>
+      <div class="layer brandmark" data-par="-.06" data-mouse="22"><div class="bm-lockup"><img src="images/logo-ih4u-emblem.png" alt="" width="198" height="165"><b>Israel Home For You</b></div></div>
+      <a class="mood-nav-link" href="#gallery" aria-label="לפרויקטים ולהזדמנויות">לפרויקטים ולהזדמנויות <span aria-hidden="true">←</span></a>
     </article>
 
     <!-- Living organic mirror -->
@@ -1153,14 +1466,14 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         <div class="sky-strip" id="skyStrip"></div>
         <img class="sky-building" id="skyBuilding" alt="בניין משרדים מזכוכית על רקע שמיים">
       </div></div>
-      <div class="sky-msg"><b>כל הבנקים.</b><span>אנחנו מולם, בשבילכם.</span></div>
+      <div class="sky-msg"><b>פתרונות מימון</b><span>ייעוץ משכנתאות והשגת אישור הלוואה בכל הבנקים הגדולים בישראל, כולל ניהול משא ומתן בשמכם.</span></div>
     </article>
 
     <!-- Terracotta stat -->
     <article class="tile t-terra" data-tilt>
       <div class="ri"><div class="layer terra-bg" data-par="-.12" data-mouse="26"><img id="terraImg" alt=""></div></div>
-      <div class="count"><strong id="counter">0</strong><span>משפחות שליווינו הביתה</span></div>
-      <div class="foot"><b>M המשכנתאות</b><br>בתים שמרגישים נכון.</div>
+      <div class="count"><strong><span id="counter">0</span> <span class="cur">₪</span></strong><span class="lbl">נחסכו ללקוחות שלנו במשכנתאות</span></div>
+      <div class="foot"><b>Israel Home For You</b><br>עבודה מול כל הבנקים הגדולים בישראל</div>
     </article>
 
     <!-- IH4U home: your home in Israel, through a house-shaped window (carries the palette's extra color) -->
@@ -1188,9 +1501,21 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         </defs>
         <g id="pendant"></g>
       </svg>
-      <div class="lamp-copy"><h4>הדרך לבית שלכם<br>מתחילה כאן.</h4><p>ליווי משכנתא אישי ומקצועי,<br>מהתכנון ועד קבלת המפתח.</p></div>
-      <a class="mood-nav-link mood-nav-lamp" href="#services" aria-label="לשירותים שלנו">לשירותים שלנו <span aria-hidden="true">←</span></a>
+      <div class="lamp-copy"><h4>ליווי אישי, מקצה לקצה</h4><p>מהשיחה הראשונה ועד היום שבו תקבלו את המפתח, ואף אחריו. מתוך מקצועיות וניסיון.</p></div>
+      <a class="mood-nav-link mood-nav-lamp" href="#services" aria-label="לפרטים נוספים על השירותים שלנו">לפרטים נוספים <span aria-hidden="true">←</span></a>
     </article>
+  </div>
+  <div class="nums" id="numbers" role="region" aria-labelledby="numsTitle">
+    <h3 id="numsTitle">המספרים שמאחורי הניסיון שלנו</h3>
+    <ul>
+      <li><strong class="fig"><span class="g">10</span> <span class="u">שנים</span></strong><span class="lbl">ניסיון בליווי פיננסי ובייעוץ משכנתאות</span></li>
+      <li><strong class="fig"><span class="g">8</span> <span class="u">שנים</span></strong><span class="lbl">ליווי עולים חדשים בהשתלבות ובהתבססות בישראל</span></li>
+      <li><strong class="fig"><span class="g">14</span> <span class="u">פרויקטים</span></strong><span class="lbl">נבחרים ברחבי הארץ</span></li>
+      <li><strong class="fig"><span class="g he">יום אחד</span></strong><span class="lbl">לקבלת אישור עקרוני למשכנתא</span></li>
+      <li class="w"><strong class="fig"><span class="u">החל מ-</span><span class="g mid">250,000 ₪</span> <span class="u">הון עצמי</span></strong><span class="lbl">לרכישת נכס בישראל</span></li>
+      <li class="w"><strong class="fig"><span class="u">החל מ-</span><span class="g mid">75,000</span> <span class="u">אירו</span></strong><span class="lbl">אפשרות לרכישת נכס</span></li>
+      <li class="w"><strong class="fig"><span class="g he">עשרות</span> <span class="u">לקוחות מרוצים</span></strong><span class="lbl">שליווינו בדרך לנכס שלהם בישראל</span></li>
+    </ul>
   </div>
 </section>
 
@@ -1198,7 +1523,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 <section class="about" id="about" dir="rtl" lang="he">
   <div class="about-track" id="aboutTrack">
     <div class="about-stage">
-      <div class="about-index"><span>04 · אודות</span><span id="aboutCount" dir="ltr">01 / 03</span></div>
+      <div class="about-index"><span>אודות</span><span id="aboutCount" dir="ltr">01 / 03</span></div>
 
       <div class="abs bigM" id="bigM" aria-hidden="true">IH4U</div>
 
@@ -1208,15 +1533,15 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
       </h2>
 
       <div class="abs hello" id="hello">
-        <div class="small" id="helloSmall">הי, נעים מאד</div>
+        <div class="small" id="helloSmall">נעים להכיר</div>
         <div class="name"><span class="word"><span class="ch m">I</span></span><span class="word" id="nameWord">H4U</span></div>
       </div>
 
       <p class="abs about-text" id="aboutText"
-         aria-live="polite">IH4U מלווה לקוחות מצרפת ומרחבי העולם בדרך לבית בישראל. מהיכרות עם הצרכים והאפשרויות, דרך חיפוש נכס או השקעה, בחינת פתרונות מימון ותכנון המעבר לישראל, ועד הרגע שבו מקבלים את המפתח. אנו מאמינים בליווי אישי, בהכוונה ברורה ובחיבור אמיתי למקום שבו תרצו להרגיש בבית.</p>
+         aria-live="polite">שתי נשים. שני עולמות. משימה אחת. מאחורי Israel&nbsp;Home&nbsp;For&nbsp;You עומדות מלכי וג׳ואן, שתי מקצועניות עם תחומי מומחיות משלימים, שמאוחדות סביב חזון אחד: להפוך את החלום שלכם על בית בישראל למציאות הטובה ביותר עבורכם. יחד, אנחנו מגשרות בין החלום הצרפתי למציאות הישראלית.</p>
 
       <ul class="abs chips" id="chips" role="group" aria-label="בחרו נושא">
-        <li class="solid"><button type="button" data-topic="journey" aria-pressed="true">ליווי לאורך הדרך</button></li><li><button type="button" data-topic="buy" aria-pressed="false">רכישת בית בישראל</button></li><li><button type="button" data-topic="invest" aria-pressed="false">השקעות נדל״ן</button></li><li><button type="button" data-topic="finance" aria-pressed="false">פתרונות מימון</button></li><li><button type="button" data-topic="move" aria-pressed="false">מעבר ועלייה</button></li>
+        <li class="solid"><button type="button" data-topic="story" aria-pressed="true">הסיפור שלנו</button></li><li><button type="button" data-topic="malki" aria-pressed="false">מלכי</button></li><li><button type="button" data-topic="joanne" aria-pressed="false">ג׳ואן</button></li><li><button type="button" data-topic="why" aria-pressed="false">למה זה חשוב</button></li><li><button type="button" data-topic="approach" aria-pressed="false">הגישה שלנו</button></li>
       </ul>
 
       <div class="about-progress" id="aboutProgress"></div>
@@ -1234,22 +1559,49 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 <section class="gal" id="gallery" dir="rtl" lang="he">
   <div class="gal-track" id="galTrack">
     <div class="gal-stage">
-      <div class="gal-bg" id="galBg" aria-hidden="true">גלריה · גלריה · גלריה ·</div>
+      <div class="gal-bg" id="galBg" aria-hidden="true">פרויקטים · פרויקטים · פרויקטים ·</div>
       <header class="gal-head">
-        <div><div class="eyebrow">05 · גלריה</div><h2>רגעים <b>מהדרך</b></h2></div>
+        <div><div class="eyebrow">פרויקטים והזדמנויות</div><h2>פרויקטים נבחרים <b>והזדמנויות עכשיו</b></h2><p class="intro">אנחנו מציעות פרויקטים נבחרים שאנחנו מאמינות בפוטנציאל שלהם, ובראשם פרויקט הדגל שלנו בבת ים, לצד דירות בהנחה ועסקאות בלעדיות שלעיתים זמינות לזמן מוגבל בלבד.</p></div>
         <div class="ctr" id="galCtr">01<small> / 08</small></div>
       </header>
       <div class="gal-row" id="galRow">
-        <figure class="g-card tall up"   data-src="" data-pos="50% 50%" data-alt="שולחנות ייעוץ ביריד נדל״ן ישראלי" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">01</span></figcaption></figure>
-        <figure class="g-card wide down" data-src="" data-pos="82% 50%" data-alt="מרפסת ים תיכונית עם פינת ישיבה ונוף לחוף הים" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">02</span></figcaption></figure>
-        <figure class="g-card sq up"     data-src="" data-pos="55% 50%" data-alt="בתי מגורים עם מרפסות אבן ונוף פנורמי לים התיכון" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">03</span></figcaption></figure>
-        <figure class="g-card tall down" data-src="" data-pos="50% 45%" data-alt="מבקרים בדוכנים ביריד נדל״ן ישראלי" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">04</span></figcaption></figure>
-        <figure class="g-card wide up"   data-src="" data-pos="40% 50%" data-alt="מרפסת מול הים עם אור שמש וצמחיה ים תיכונית" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">05</span></figcaption></figure>
-        <figure class="g-card sq down"   data-src="" data-pos="50% 40%" data-alt="קהל רב באולם יריד הנדל״ן" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">06</span></figcaption></figure>
-        <figure class="g-card tall up"   data-src="" data-pos="50% 20%" data-alt="פגישת ייעוץ בדוכן IH4U ביריד הנדל״ן" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">07</span></figcaption></figure>
-        <figure class="g-card wide down" data-src="" data-pos="50% 50%" data-alt="סלון מואר עם חלונות פנורמיים הפונים לים" data-title="כותרת לתמונה"><div class="media"><div class="inner"></div></div><figcaption><b>כותרת לתמונה</b><span class="no">08</span></figcaption></figure>
+        <figure class="g-card tall up" data-src="" data-pos="24% 50%" data-alt="הדמיה להמחשה: מגדלי מגורים מודרניים על רקע שמיים" data-title="תדהר הגיבורים | בת ים"><div class="media"><div class="inner"></div></div><figcaption><b>תדהר הגיבורים | בת ים</b><span class="no">01</span></figcaption></figure>
+        <figure class="g-card wide down" data-src="" data-pos="35% 50%" data-alt="הדמיה להמחשה: בניין מגורים חדש עם חזית מסחרית מוארת" data-title="Up Life | נתיבות"><div class="media"><div class="inner"></div></div><figcaption><b>Up Life | נתיבות</b><span class="no">02</span></figcaption></figure>
+        <figure class="g-card sq up" data-src="" data-pos="55% 50%" data-alt="הדמיה להמחשה: בתי מגורים עם מרפסות ונוף לים התיכון" data-title="מומנטום | נתניה"><div class="media"><div class="inner"></div></div><figcaption><b>מומנטום | נתניה</b><span class="no">03</span></figcaption></figure>
+        <figure class="g-card tall down" data-src="" data-pos="46% 50%" data-alt="הדמיה להמחשה: מגדל מגורים בשעת ערב" data-title="ים 18 | בת ים"><div class="media"><div class="inner"></div></div><figcaption><b>ים 18 | בת ים</b><span class="no">04</span></figcaption></figure>
+        <figure class="g-card wide up" data-src="" data-pos="30% 50%" data-alt="הדמיה להמחשה: קו חוף ומגדלים בנויים לאורך הים" data-title="UPDOWN&rlm; | 20 דקות מתל אביב"><div class="media"><div class="inner"></div></div><figcaption><b>UPDOWN&rlm; | 20 דקות מתל אביב</b><span class="no">05</span></figcaption></figure>
+        <figure class="g-card sq down" data-src="" data-pos="30% 50%" data-alt="הדמיה להמחשה: בית מגורים מודרני עם מרפסות וגינה" data-title="חדרה"><div class="media"><div class="inner"></div></div><figcaption><b>חדרה</b><span class="no">06</span></figcaption></figure>
+        <figure class="g-card tall up" data-src="" data-pos="22% 50%" data-alt="הדמיה להמחשה: סלון מואר עם נוף לעיר בשעת ערב" data-title="ירושלים"><div class="media"><div class="inner"></div></div><figcaption><b>ירושלים</b><span class="no">07</span></figcaption></figure>
+        <figure class="g-card wide down" data-src="" data-pos="50% 50%" data-alt="הדמיה להמחשה: סלון מואר עם חלונות פנורמיים הפונים לים" data-title="נתניה"><div class="media"><div class="inner"></div></div><figcaption><b>נתניה</b><span class="no">08</span></figcaption></figure>
       </div>
       <div class="gal-prog"><span id="galProg"></span></div>
+    </div>
+  </div>
+  <div class="flag" id="flagship" aria-labelledby="flagTitle">
+    <div class="flag-in">
+      <div class="flag-head">
+        <span class="flag-eyebrow">פרויקט הדגל שלנו</span>
+        <h3 id="flagTitle">תדהר הגיבורים<small>בת ים, דקות מתל אביב</small></h3>
+        <p class="lead">שני מגדלי מגורים מודרניים של חברת תדהר, 950 מטר בלבד מהים ובמרחק נסיעה של דקות ספורות מתל אביב. סביבת מגורים בריאה וירוקה, קרובה לכל מה שחשוב לכם, עם דירות ופנטהאוזים לכל שלב בחיים.</p>
+      </div>
+      <figure class="flag-media"><img id="flagImg" alt="הדמיה להמחשה: מגדלי מגורים מודרניים על רקע שמיים" loading="lazy"></figure>
+      <div class="flag-cta">
+        <div class="flag-why">
+          <h4>למה בחרנו בו</h4>
+          <p>בית ליד הים, בפתחה של תל אביב, מחובר לרכבת הקלה, בנוי בתקן ירוק ומגובה באחריות ל-10 שנים. בית למשפחה, או השקעה חכמה.</p>
+        </div>
+        <a class="ih4u-btn" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%90%D7%AA%20%D7%94%D7%97%D7%95%D7%91%D7%A8%D7%AA%20%D7%A9%D7%9C%20%D7%AA%D7%93%D7%94%D7%A8%20%D7%94%D7%92%D7%99%D7%91%D7%95%D7%A8%D7%99%D7%9D." target="_blank" rel="noopener">לקבלת החוברת</a>
+        <p class="ih4u-micro">התמונות להמחשה בלבד. תנאי האחריות כמפורט על ידי תדהר.</p>
+      </div>
+      <ul class="flag-facts">
+        <li><b>המגדלים</b>2 מגדלים בני כ-23 וכ-28 קומות, בתכנון D-BLK אדריכלים, בחיפוי אבן ואלומיניום</li>
+        <li><b>דירה לכל צורך</b>דירות 2 עד 5 חדרים ופנטהאוזים, עם נוף לים מהקומות העליונות</li>
+        <li><b>מיקום</b>950 מטר מהים, 2 תחנות רכבת קלה בסמוך, דקות נסיעה מתל אביב</li>
+        <li><b>ירוק וחסכוני</b>תקן בנייה ירוקה 4 כוכבים ודירוג אנרגטי A, לחיסכון לטווח ארוך בהוצאות משק הבית</li>
+        <li><b>חיים בתוך הפרויקט</b>מועדון דיירים, חדר משחקים לילדים, מרפסת כושר, לובי מפואר, ובקומת הקרקע 2 גני ילדים ומסחר</li>
+        <li><b>מפרט משודרג</b>מערכת בית חכם, מטבחים מאובזרים מספקים מובילים, ריצוף גרניט פורצלן, ובפנטהאוזים מיזוג VRF ומטבח חוץ</li>
+        <li><b>שקט נפשי</b>אחריות תדהר ל-10 שנים</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -1265,7 +1617,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
           <div class="eyebrow">06 · שפה עיצובית</div>
           <h2>טיפוגרפיה<br><b>וצבע</b></h2>
         </div>
-        <p class="lead px" data-speed=".45">הכלים שמרכיבים את הזהות של M המשכנתאות: משפחת גופנים אחת עם שני קולות, כבד ובטוח לצד קל ונושם, ופלטה חמה מעולם החומרים הטבעיים.</p>
+        <p class="lead px" data-speed=".45">הכלים שמרכיבים את הזהות של Israel Home For You: משפחת גופנים אחת עם שני קולות, כבד ובטוח לצד קל ונושם, ופלטה חמה מעולם החומרים הטבעיים.</p>
         <div class="chips px" data-speed=".8" aria-hidden="true">
           <span style="background:#0050B0"></span><span style="background:#FFD700"></span><span style="background:#0D8A4A"></span><span style="background:#0078D7"></span><span style="background:#06657A"></span><span style="background:#0898B0"></span>
         </div>
@@ -1273,17 +1625,17 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     </div></div>
 
     <div class="pnl p-type"><div class="pnl-in">
-      <div class="pad"><div class="eyebrow">גופנים · Heebo</div></div>
+      <div class="pad"><div class="eyebrow">גופנים · Assistant</div></div>
       <div class="spec">
         <div class="srow heavy">
           <div class="big" id="gHeavy">אב<span class="lat">Aa</span></div>
-          <div class="lab"><b>כותרות</b>HEEBO · <span class="wv" id="wHeavy">900</span></div>
+          <div class="lab"><b>כותרות</b>ASSISTANT · <span class="wv" id="wHeavy">900</span></div>
           <div class="abc" id="aHeavy"><span>אבגדהוזחטיכלמנסעפצקרשת</span><span class="lt">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span class="lt">abcdefghijklmnopqrstuvwxyz</span></div>
         </div>
         <hr>
         <div class="srow light">
           <div class="big" id="gLight">אב<span class="lat">Aa</span></div>
-          <div class="lab"><b>טקסט רץ</b>HEEBO · <span class="wv" id="wLight">200</span></div>
+          <div class="lab"><b>טקסט רץ</b>ASSISTANT · <span class="wv" id="wLight">200</span></div>
           <div class="abc" id="aLight"><span>אבגדהוזחטיכלמנסעפצקרשת</span><span class="lt">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span class="lt">abcdefghijklmnopqrstuvwxyz</span></div>
         </div>
       </div>
@@ -1316,23 +1668,21 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   <div class="tst-bgword" id="tstWord" aria-hidden="true">תודה רבה · תודה רבה ·</div>
   <div class="tst-wrap">
     <aside class="tst-side">
-      <div class="eyebrow">לקוחות ממליצים</div>
-      <div class="num">01<small> / 03</small></div>
-      <p class="note">מקום לעדויות לקוחות אמיתיות, לאחר אישור IH4U וקבלת צילומי הלקוחות.</p>
+      <h2 class="tst-title">הלקוחות שלנו מספרים</h2>
+      <div class="num">01<small> / 02</small></div>
     </aside>
     <figure class="tst-main">
       <div class="tst-mark" id="tstMark" aria-hidden="true">”</div>
-      <blockquote class="tst-quote" id="tstQuote" aria-live="polite">כאן תופיע המלצת לקוח אמיתית לאחר קבלת אישור לפרסום.</blockquote>
+      <blockquote class="tst-quote" id="tstQuote" aria-live="polite">״אשתי ואני רוצים להודות מכל הלב לכל הצוות של Israel&nbsp;Home&nbsp;For&nbsp;You על הליווי לאורך כל פרויקט הנדל"ן שלנו. ההקשבה, העצות והרצינות שלכם היו יקרות ערך ותרמו רבות להצלחת הרכישה. אנחנו ממליצים בחום על Israel&nbsp;Home&nbsp;For&nbsp;You בזכות איכות הליווי והמחויבות. שוב תודה רבה לכל הצוות על החוויה הנפלאה, ובמיוחד לגב׳ שושנה על הזמינות, המקצועיות וההיענות המהירה, וכן למלכי.״</blockquote>
       <figcaption class="tst-author" id="tstAuthor">
-  <div class="av" id="tstAvatar" aria-label="דיוקן להמחשה בלבד"><img src="images/testimonial-preview-01.webp" alt="דיוקן להמחשה בלבד, לא לקוח IH4U" width="58" height="58" loading="lazy"></div>
-  <div><b id="tstName">המלצה ממתינה לאישור</b><span id="tstRole">תמונה וציטוט מקוריים יתווספו לאחר קבלת החומרים</span></div>
-</figcaption>
-<div class="tst-slider-controls" dir="ltr" aria-label="ניווט בין המלצות">
-  <button class="tst-slide-btn" type="button" id="tstPrev" aria-label="המלצה קודמת">‹</button>
-  <span class="tst-slider-count" id="tstCount" aria-live="polite">01 / 03</span>
-  <button class="tst-slide-btn" type="button" id="tstNext" aria-label="המלצה הבאה">›</button>
-</div>
-<p class="tst-placeholder-note">תמונות להמחשה בלבד, אינן של לקוחות IH4U. המלצות ותמונות לקוחות אמיתיות יתווספו לאחר אישור.</p>
+        <div class="av" id="tstAvatar" aria-hidden="true">א</div>
+        <div><b id="tstName">אנדרה א.</b><span id="tstRole">תורגם מהמקור בצרפתית</span></div>
+      </figcaption>
+      <div class="tst-slider-controls" dir="ltr" aria-label="ניווט בין המלצות">
+        <button class="tst-slide-btn" type="button" id="tstPrev" aria-label="המלצה קודמת">‹</button>
+        <span class="tst-slider-count" id="tstCount" aria-live="polite">01 / 02</span>
+        <button class="tst-slide-btn" type="button" id="tstNext" aria-label="המלצה הבאה">›</button>
+      </div>
     </figure>
   </div>
 </section>
@@ -1355,7 +1705,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         </svg>
       </div>
       <div class="mcopy" id="mCopy">
-        <div class="top"><div class="eyebrow">07 · הדרך הביתה</div><h2>כל בית <b>מתחיל</b></h2></div>
+        <div class="top"><div class="eyebrow">הדרך הביתה</div><h2>כל בית <b>מתחיל</b></h2></div>
         <div class="bot"><h2>ב־<b>IH4U</b>.</h2><div class="hint">גללו פנימה</div></div>
       </div>
 
@@ -1371,7 +1721,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         <div class="dim"></div>
       </div>
       <div class="lyr" id="jL3" style="z-index:7">
-        <div class="img" style="--fb:linear-gradient(135deg,#14A85C,#0D8A4A)"><img id="jrImg3" data-slot="journey[2]" alt="מבט אל חוף הים התיכון והעיר הישראלית" onerror="this.remove()"></div>
+        <div class="img" style="--fb:linear-gradient(135deg,#42C4C3,#2A8FA8)"><img id="jrImg3" data-slot="journey[2]" alt="מבט אל חוף הים התיכון והעיר הישראלית" onerror="this.remove()"></div>
         <div class="word"><span class="k">03 / 03</span><span class="w"><b>מפתח.</b></span><span class="t">ליווי לאורך שלבי הרכישה עד לקבלת המפתח לבית בישראל.</span></div>
         <div class="dim"></div>
       </div>
@@ -1381,14 +1731,14 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         <div class="fan" id="jFan" aria-hidden="true">
           <div class="arch" style="--fb:linear-gradient(135deg,#0078D7,#0050B0)"></div>
           <div class="arch" style="--fb:linear-gradient(135deg,#0898B0,#06657A)"></div>
-          <div class="arch" style="--fb:linear-gradient(135deg,#14A85C,#0D8A4A)"></div>
+          <div class="arch" style="--fb:linear-gradient(135deg,#42C4C3,#2A8FA8)"></div>
         </div>
         <div class="copy">
-          <div class="eyebrow">IH4U · ישראל הום פור יו</div>
-          <span class="ln"><span class="l1">אנחנו פותחים <b>דלתות</b></span></span>
-          <span class="ln"><span class="big">לבית שלא רק מרגיע אתכם,</span></span>
-          <span class="ln"><span class="big">הוא מרגש.</span></span>
-          <div class="cta" id="jCta"><a class="p" href="#">לבדיקת התאמה ←</a><a class="s" href="#">שיחת ייעוץ</a></div>
+          <div class="eyebrow">Israel Home For You</div>
+          <span class="ln"><span class="l1">מוכנים לפתוח <b>את הדלת?</b></span></span>
+          <span class="ln"><span class="big">פותחים דלתות,</span></span>
+          <span class="ln"><span class="big">מגשימים חלומות.</span></span>
+          <div class="cta" id="jCta"><a class="p" href="#contact">קבעו פגישת ייעוץ ←</a><a class="s" href="#calc">בדקו את כושר הרכישה שלכם</a></div>
         </div>
       </div>
 
@@ -1396,57 +1746,70 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     </div>
   </div>
 </section>
-<!-- STEP 10: proposed seven-step client journey / process gallery -->
+<!-- STEP 10: the ten-step client journey, four phases, as a manual slider -->
 <section class="ih4u-process" id="ih4u-process" dir="rtl" lang="he" aria-labelledby="ih4u-process-title">
   <div class="ih4u-process-head">
-    <p class="ih4u-process-eyebrow">IH4U · הדרך לבית בישראל</p>
-    <h2 id="ih4u-process-title">שבע תחנות בדרך לבית בישראל</h2>
-    <p class="ih4u-process-intro">מהשיחה הראשונה, דרך בחירת הנכס והתכנון הפיננסי, ועד קבלת המפתח והליווי לאחר הרכישה.</p>
+    <p class="ih4u-process-eyebrow">המסע שלכם איתנו</p>
+    <h2 id="ih4u-process-title">מהחלום ועד המפתח, אנחנו איתכם בכל שלב</h2>
+    <p class="ih4u-process-intro">עשרה שלבים. צוות אחד. כך אנחנו מלוות אתכם.</p>
   </div>
   <div class="ih4u-process-slider">
-  <div class="ih4u-process-window" tabindex="0" aria-label="גלריית שלבי התהליך: ניתן לנווט בחצים או בהחלקה">
+  <div class="ih4u-process-window" tabindex="0" aria-label="עשרת שלבי התהליך: ניתן לנווט בחצים או בהחלקה">
   <div class="ih4u-process-grid">
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-coastal-terrace.webp" alt="המחשה חזותית: היכרות והבנת הצרכים" loading="lazy" decoding="async"><span class="ih4u-process-number">01</span></div>
-      <div class="ih4u-process-copy"><h3>היכרות והבנת הצרכים</h3><p>שיחה אישית להגדרת מטרות הרכישה, הציפיות והתקציב.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-coastal-terrace.webp" alt="המחשה חזותית: בחינת הפרויקט שלכם" loading="lazy" decoding="async"><span class="ih4u-process-number">01</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב א׳ · תכנון</span><h3>בחינת הפרויקט שלכם</h3><p>שיחה להבנת הצרכים, הקריטריונים, התקציב והמטרות שלכם, כדי שנציע רק נכסים שבאמת מתאימים לכם.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-beachfront.webp" alt="המחשה חזותית: היכרות עם אזורים בישראל" loading="lazy" decoding="async"><span class="ih4u-process-number">02</span></div>
-      <div class="ih4u-process-copy"><h3>היכרות עם אזורים בישראל</h3><p>בחינת ערים, קהילות וסגנונות מגורים לפי העדפות המשפחה.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-panorama-living.webp" alt="המחשה חזותית: בדיקה פיננסית וכושר רכישה" loading="lazy" decoding="async"><span class="ih4u-process-number">02</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב א׳ · תכנון</span><h3>בדיקה פיננסית וכושר רכישה</h3><p>ניתוח ההכנסות, ההון העצמי וההתחייבויות הפיננסיות שלכם, כדי לקבוע את תקציב הנכס שתוכלו לשקול באופן מציאותי.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-panorama-living.webp" alt="המחשה חזותית: תכנון פיננסי" loading="lazy" decoding="async"><span class="ih4u-process-number">03</span></div>
-      <div class="ih4u-process-copy"><h3>תכנון פיננסי</h3><p>סקירת אפשרויות מימון, משכנתא והתקציב המתאים לעסקה.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-open-sea-living.webp" alt="המחשה חזותית: סימולציית תקציב לנכס" loading="lazy" decoding="async"><span class="ih4u-process-number">03</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב א׳ · תכנון</span><h3>סימולציית תקציב לנכס</h3><p>השאלון האישי שלנו מראה לכם את כושר הרכישה שלכם ואילו נכסים נמצאים בהישג יד.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-seaside-residences.webp" alt="המחשה חזותית: איתור נכס מתאים" loading="lazy" decoding="async"><span class="ih4u-process-number">04</span></div>
-      <div class="ih4u-process-copy"><h3>איתור נכס מתאים</h3><p>הצגת נכסים והזדמנויות רלוונטיים לצורכי הלקוח.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-seaside-residences.webp" alt="המחשה חזותית: איתור הנכס שלכם" loading="lazy" decoding="async"><span class="ih4u-process-number">04</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ב׳ · איתור</span><h3>איתור הנכס שלכם</h3><p>דירה חדשה מקבלן (על הנייר) או יד שנייה, בעיר שתבחרו, לפי הקריטריונים, התקציב ולוח הזמנים שלכם.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-mediterranean-stone.webp" alt="המחשה חזותית: ליווי במהלך הרכישה" loading="lazy" decoding="async"><span class="ih4u-process-number">05</span></div>
-      <div class="ih4u-process-copy"><h3>ליווי במהלך הרכישה</h3><p>תיאום שלבי העסקה ועבודה מול אנשי המקצוע הרלוונטיים.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-beachfront.webp" alt="המחשה חזותית: הזדמנויות עכשיו" loading="lazy" decoding="async"><span class="ih4u-process-number">05</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ב׳ · איתור</span><h3>הזדמנויות עכשיו</h3><p>דירות בהנחה, הצעות בלעדיות ועסקאות שלעיתים זמינות לזמן מוגבל בלבד.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-coastal-home.webp" alt="המחשה חזותית: קבלת המפתח" loading="lazy" decoding="async"><span class="ih4u-process-number">06</span></div>
-      <div class="ih4u-process-copy"><h3>קבלת המפתח</h3><p>התקדמות לסיום הרכישה ולכניסה לבית החדש.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-coastal-home.webp" alt="המחשה חזותית: פרויקטים חדשים שאנחנו משווקות" loading="lazy" decoding="async"><span class="ih4u-process-number">06</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ב׳ · איתור</span><h3>פרויקטים חדשים שאנחנו משווקות</h3><p>פרויקטים נבחרים ברחבי הארץ שאנחנו משווקות, מפרויקטים שממתינים להיתר בנייה ועד פרויקטים בשלבי בנייה.</p></div>
     </article>
     <article class="ih4u-process-card">
-      <div class="ih4u-process-media"><img src="images/step4-sunset-dining.webp" alt="המחשה חזותית: המשך הליווי לאחר הרכישה" loading="lazy" decoding="async"><span class="ih4u-process-number">07</span></div>
-      <div class="ih4u-process-copy"><h3>המשך הליווי לאחר הרכישה</h3><p>בחינת הצורך בסיוע בהשכרה, בתחזוקה ובניהול הנכס.</p></div>
+      <div class="ih4u-process-media"><img src="images/step4-mediterranean-stone.webp" alt="המחשה חזותית: מימון ומשכנתאות" loading="lazy" decoding="async"><span class="ih4u-process-number">07</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ג׳ · מימון ורכישה</span><h3>מימון ומשכנתאות</h3><p>הכנת הבקשה, השגת אישור עקרוני, השוואת הצעות הבנקים ומשא ומתן על הריביות, עד לשחרור הכספים.</p></div>
+    </article>
+    <article class="ih4u-process-card">
+      <div class="ih4u-process-media"><img src="images/step4-coast-lounge.webp" alt="המחשה חזותית: ליווי מנהלי ומשפטי" loading="lazy" decoding="async"><span class="ih4u-process-number">08</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ג׳ · מימון ורכישה</span><h3>ליווי מנהלי ומשפטי</h3><p>פתיחת חשבון בנק, חיבור לעורך דין דובר צרפתית, תיאום מול חברות הביטוח וליווי עד חתימת חוזה הרכישה.</p></div>
+    </article>
+    <article class="ih4u-process-card">
+      <div class="ih4u-process-media"><img src="images/step4-sunset-dining.webp" alt="המחשה חזותית: ליווי עד קבלת המפתח" loading="lazy" decoding="async"><span class="ih4u-process-number">09</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ד׳ · המפתח והלאה</span><h3>ליווי עד קבלת המפתח</h3><p>מעקב צמוד אחרי הרכישה ותיאום כל שלב, עד שהמפתח בידיים שלכם.</p></div>
+    </article>
+    <article class="ih4u-process-card">
+      <div class="ih4u-process-media"><img src="images/section3-house-enhanced.webp" alt="המחשה חזותית: אחרי הרכישה, השכרה ושיפוצים" loading="lazy" decoding="async"><span class="ih4u-process-number">10</span></div>
+      <div class="ih4u-process-copy"><span class="ih4u-process-phase">שלב ד׳ · המפתח והלאה</span><h3>אחרי הרכישה, השכרה ושיפוצים</h3><p>איתור שוכרים, ניהול הנכס, חיבור לאנשי מקצוע אמינים וארגון עבודות שיפוץ.</p></div>
     </article>
   </div>
   </div>
   <div class="ih4u-process-controls" aria-label="ניווט בין שלבי התהליך">
     <button class="ih4u-process-arrow" id="ih4u-process-prev" type="button" aria-label="השלב הקודם" title="השלב הקודם">&#8594;</button>
-    <span class="ih4u-process-counter" id="ih4u-process-counter" aria-live="polite">1 / 7</span>
+    <span class="ih4u-process-counter" id="ih4u-process-counter" aria-live="polite">1 / 10</span>
     <button class="ih4u-process-arrow" id="ih4u-process-next" type="button" aria-label="השלב הבא" title="השלב הבא">&#8592;</button>
   </div>
   </div>
-  <p class="ih4u-process-disclaimer">שלבי התהליך הם הצעה להמחשה בלבד וממתינים לאישור IH4U. התמונות להמחשה ואינן בהכרח נכסים המוצעים למכירה.</p>
+  <p class="ih4u-process-cta"><a class="ih4u-btn" href="#contact">מתחילים בשלב 1: ספרו לנו על הפרויקט שלכם</a></p>
+  <p class="ih4u-process-disclaimer">התמונות להמחשה בלבד ואינן בהכרח נכסים המוצעים למכירה.</p>
 </section>
 <!-- END STEP 10 -->
 <script>
-/* STEP 10: Manual seven-card slider; arrows and native touch swipe only. */
+/* STEP 10: Manual ten-card slider; arrows and native touch swipe only. */
 (function(){
   function initJourneySlider(){
     const section=document.getElementById('ih4u-process');
@@ -1515,38 +1878,164 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 })();
 </script>
 
+<!-- ================= PURCHASING POWER - simple block, WhatsApp call to action ================= -->
+<section class="ih4u-block ih4u-calc" id="calc" dir="rtl" lang="he" aria-labelledby="calcTitle">
+  <div class="ih4u-wrap ih4u-calc-in">
+    <div>
+      <p class="ih4u-eyebrow">מחשבון כושר רכישה</p>
+      <h2 id="calcTitle">כמה תוכלו לקנות בישראל?</h2>
+      <i class="ih4u-rule" aria-hidden="true"></i>
+      <p class="ih4u-lead">ספרו לנו על ההכנסות, ההון העצמי והתוכניות שלכם, ומלכי תבדוק איתכם את כושר הרכישה שלכם ואילו נכסים נמצאים בהישג יד.</p>
+      <a class="ih4u-btn" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%90%D7%AA%20%D7%9B%D7%95%D7%A9%D7%A8%20%D7%94%D7%A8%D7%9B%D7%99%D7%A9%D7%94%20%D7%A9%D7%9C%D7%99." target="_blank" rel="noopener">לבדיקת הזכאות שלי</a>
+      <p class="ih4u-micro">מותאם אישית למצב הפיננסי שלכם.</p>
+    </div>
+    <figure class="ih4u-calc-photo"><img id="calcImg" alt="פגישת ייעוץ בדוכן IH4U ביריד נדל&quot;ן" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ================= DOCUMENTS AND GUIDES ================= -->
+<section class="ih4u-block ih4u-docs" id="docs" dir="rtl" lang="he" aria-labelledby="docsTitle">
+  <div class="ih4u-wrap">
+    <p class="ih4u-eyebrow">מסמכים ומדריכים</p>
+    <h2 id="docsTitle">מסמכים ומדריכים לרכישה בישראל</h2>
+    <i class="ih4u-rule" aria-hidden="true"></i>
+    <p class="ih4u-lead">מדריכים מעשיים וחינמיים לבירוקרטיה הישראלית, שנכתבו במיוחד לרוכשים שמגיעים מצרפת. מתנה מאיתנו, גם אם לא תקנו דרכנו.</p>
+    <div class="ih4u-docs-grid">
+      <article class="ih4u-doc">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 18 L24 7 L42 18 Z"/><path d="M11 23 V35"/><path d="M20 23 V35"/><path d="M28 23 V35"/><path d="M37 23 V35"/><path d="M6 40 H42"/></svg>
+        <h3>פתיחת חשבון בנק בישראל: מה צריך להביא</h3>
+        <span class="tag">בקרוב</span>
+      </article>
+      <article class="ih4u-doc">
+        <svg class="ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10 H21 A4 4 0 0 1 25 14 V40 A3 3 0 0 0 22 37 H8 Z"/><path d="M41 10 H28 A4 4 0 0 0 24 14 V40 A3 3 0 0 1 27 37 H41 Z"/></svg>
+        <h3>המדריך שלנו: הבית שלכם בישראל</h3>
+        <p>בצרפתית ובאנגלית</p>
+        <a class="ih4u-btn" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%27%D7%94%D7%91%D7%99%D7%AA%20%D7%A9%D7%9C%D7%9B%D7%9D%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C%27." target="_blank" rel="noopener">שלחו לי את המדריך</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT - no backend: direct WhatsApp buttons and a form that opens WhatsApp ================= -->
+<section class="ih4u-block ih4u-contact" id="contact" dir="rtl" lang="he" aria-labelledby="contactTitle">
+  <div class="ih4u-wrap ih4u-contact-in">
+    <div>
+      <p class="ih4u-eyebrow">צור קשר</p>
+      <h2 id="contactTitle">ההצלחה שלכם היא המחויבות שלנו</h2>
+      <i class="ih4u-rule" aria-hidden="true"></i>
+      <p class="ih4u-lead">אתם חולמים על בית בישראל. אנחנו כאן כדי להפוך את הדרך לשם לפשוטה, בטוחה וחכמה יותר.</p>
+      <p class="ih4u-slogan">החלום שלכם בישראל. המומחיות שלנו הופכת אותו למציאות.</p>
+      <div class="ih4u-direct">
+        <a class="ih4u-btn" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>וואטסאפ למלכי · עברית, אנגלית</a>
+        <a class="ih4u-btn line" href="https://wa.me/972587480641?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener" dir="ltr" lang="fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>WhatsApp Joanne · Français, Español</a>
+      </div>
+      <p class="ih4u-mail">או במייל: <a href="mailto:israelh4u@gmail.com" dir="ltr">israelh4u@gmail.com</a></p>
+    </div>
+    <form class="ih4u-form" id="ih4uContactForm" novalidate aria-label="טופס יצירת קשר">
+      <div class="f"><label for="cf-name">שם מלא</label><input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-err"><p class="err" id="cf-name-err" role="alert" hidden></p></div>
+      <div class="f"><label for="cf-phone">טלפון</label><input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+33 6 12 34 56 78" aria-describedby="cf-phone-err"><p class="err" id="cf-phone-err" role="alert" hidden></p></div>
+      <div class="f"><label for="cf-country">מדינת מגורים</label><input id="cf-country" name="country" type="text" autocomplete="country-name"></div>
+      <div class="f"><label for="cf-type">סוג הפרויקט</label><select id="cf-type" name="type"><option value="">בחרו</option><option>בית לעלייה</option><option>השקעה</option><option>שניהם</option></select></div>
+      <div class="f full"><label for="cf-lang">שפה מועדפת</label><select id="cf-lang" name="lang"><option value="he">עברית</option><option value="fr">צרפתית</option><option value="en">אנגלית</option></select></div>
+      <div class="f full"><label for="cf-msg">הודעה</label><textarea id="cf-msg" name="msg" rows="4"></textarea></div>
+      <button type="submit" class="ih4u-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>שליחה בוואטסאפ</button>
+      <p class="status" id="cf-status" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+<script>
+/* New blocks: the consultation photo, and the contact form. No backend: the answers become a WhatsApp message
+   (Joanne when the preferred language is French, otherwise Malki). Nothing is cleared on an error. */
+(function(){
+  var ci = document.getElementById('calcImg');
+  if (ci && window.EMBEDDED) ci.src = EMBEDDED.gal7;
+
+  var form = document.getElementById('ih4uContactForm');
+  if (!form) return;
+  var NUM = { he: '972544991022', en: '972544991022', fr: '972587480641' };
+  var LANG = { he: 'עברית', fr: 'צרפתית', en: 'אנגלית' };
+  var status = document.getElementById('cf-status');
+  function field(n){ return form.elements[n]; }
+  function val(n){ return (field(n).value || '').replace(/\s+/g, ' ').trim(); }
+  function setErr(n, msg){
+    var el = field(n), err = document.getElementById('cf-' + n + '-err');
+    if (msg){ el.setAttribute('aria-invalid', 'true'); err.textContent = msg; err.hidden = false; }
+    else { el.removeAttribute('aria-invalid'); err.textContent = ''; err.hidden = true; }
+    return !msg;
+  }
+  function checkName(){ return setErr('name', val('name').length >= 2 ? '' : 'נא למלא שם מלא.'); }
+  function checkPhone(){
+    var p = val('phone'), digits = p.replace(/\D/g, '');
+    var ok = /^[+\d][\d\s().-]*$/.test(p) && digits.length >= 8 && digits.length <= 15;
+    return setErr('phone', ok ? '' : 'נא למלא מספר טלפון תקין, כולל קידומת.');
+  }
+  field('name').addEventListener('input', function(){ if (field('name').hasAttribute('aria-invalid')) checkName(); });
+  field('phone').addEventListener('input', function(){ if (field('phone').hasAttribute('aria-invalid')) checkPhone(); });
+  function buildUrl(){
+    var lang = field('lang').value || 'he';
+    var lines = ['שלום, אשמח לתאם פגישת ייעוץ בנושא רכישת נכס בישראל.', 'שם מלא: ' + val('name'), 'טלפון: ' + val('phone')];
+    if (val('country')) lines.push('מדינת מגורים: ' + val('country'));
+    if (field('type').value) lines.push('סוג הפרויקט: ' + field('type').value);
+    lines.push('שפה מועדפת: ' + (LANG[lang] || lang));
+    var msg = (field('msg').value || '').trim();
+    if (msg) lines.push('הודעה: ' + msg);
+    return 'https://wa.me/' + (NUM[lang] || NUM.he) + '?text=' + encodeURIComponent(lines.join('\n'));
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var okName = checkName(), okPhone = checkPhone();
+    if (!okName || !okPhone){
+      status.hidden = true;
+      field(okName ? 'phone' : 'name').focus();
+      return;
+    }
+    var url = buildUrl();
+    form.dataset.waUrl = url;
+    status.textContent = 'וואטסאפ נפתח בלשונית חדשה עם הפרטים שמילאתם. לא נפתח? ';
+    var a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'לחצו כאן';
+    status.appendChild(a); status.hidden = false;
+    window.open(url, '_blank', 'noopener');
+  });
+})();
+</script>
+
 <!-- ================= FOOTER - Hebrew, RTL (revealed from underneath) ================= -->
 <div class="ft-wrap" id="ftWrap">
   <footer class="ft" id="ft" dir="rtl" lang="he">
     <div class="ft-in" id="ftIn">
       <div class="ft-top">
-        <h2>מוכנים לפתוח<br>את <b>הדלת?</b></h2>
+        <div class="ft-brandline">
+          <a href="#top"><img src="images/logo-ih4u-on-dark.png" alt="IH4U Israel Home For You" width="528" height="173" loading="lazy"></a>
+          <p class="tagline" lang="fr">Votre réussite, notre succès.</p>
+          <p class="desc">נדל"ן, ייעוץ משכנתאות וליווי מקצה לקצה למשפחות דוברות צרפתית שרוכשות נכס בישראל.</p>
+        </div>
         <div class="act">
-          <a class="p" href="#">לבדיקת התאמה ←</a>
-          <a class="s" href="https://wa.me/972500000000" target="_blank" rel="noopener">וואטסאפ</a>
+          <a class="p" href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener">וואטסאפ למלכי</a>
+          <a class="s" href="https://wa.me/972587480641?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener" dir="ltr">WhatsApp Joanne</a>
           <button class="ft-up" id="ftUp" aria-label="חזרה למעלה">↑</button>
         </div>
       </div>
       <div class="ft-cols">
         <div><h4>ניווט</h4><ul>
-          <li><a href="#top">ראשי</a></li><li><a href="#testimonials">לקוחות ממליצים</a></li><li><a href="#services">השירותים שלנו</a></li>
-          <li><a href="#about">אודות</a></li><li><a href="#gallery">גלריה</a></li></ul></div>
-        <div><h4>שירותים</h4><ul>
-          <li><a href="#services">רכישת דירה</a></li><li><a href="#services">מיחזור משכנתא</a></li><li><a href="#services">איחוד הלוואות</a></li>
-          <li><a href="#services">תיקים מסורבים</a></li><li><a href="#services">משכנתא הפוכה</a></li></ul></div>
+          <li><a href="#top">דף הבית</a></li><li><a href="#about">אודות</a></li><li><a href="#services">השירותים שלנו</a></li>
+          <li><a href="#gallery">פרויקטים והזדמנויות</a></li></ul></div>
+        <div><h4>עוד באתר</h4><ul>
+          <li><a href="#calc">מחשבון</a></li><li><a href="#docs">מסמכים ומדריכים</a></li><li><a href="#testimonials">הלקוחות שלנו מספרים</a></li>
+          <li><a href="#contact">צור קשר</a></li></ul></div>
         <div><h4>צור קשר</h4><ul>
-          <li><a href="tel:+972500000000"><span class="ltr">050-000-0000</span></a></li>
-          <li><a href="mailto:info@example.co.il"><span class="ltr">info@example.co.il</span></a></li>
-          <li>כתובת המשרד, עיר</li><li>א׳-ה׳ · 09:00-18:00</li></ul></div>
+          <li><a href="https://wa.me/972544991022?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener">מלכי (עברית, אנגלית): <span class="ltr">054-499-1022</span></a></li>
+          <li><a href="https://wa.me/972587480641?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%91%D7%A0%D7%95%D7%A9%D7%90%20%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A0%D7%9B%D7%A1%20%D7%91%D7%99%D7%A9%D7%A8%D7%90%D7%9C." target="_blank" rel="noopener">ג׳ואן (צרפתית, ספרדית): <span class="ltr">058-748-0641</span></a></li>
+          <li><a href="tel:+33611748064">מצרפת: <span class="ltr">+33 6 11 74 80 64</span></a></li>
+          <li><a href="mailto:israelh4u@gmail.com"><span class="ltr">israelh4u@gmail.com</span></a></li></ul></div>
         <div><h4>עקבו אחרינו</h4><ul>
-          <li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li></ul></div>
+          <li><a href="https://www.facebook.com/share/1BUgNgC2Lf/" target="_blank" rel="noopener">פייסבוק: <span class="ltr">Israelhome4you</span></a></li>
+          <li>בית שמש</li></ul></div>
       </div>
     </div>
     <div>
-      <div class="ft-mark" id="ftMark" aria-label="M המשכנתאות"><span class="ch m">M</span><span id="ftName">המשכנתאות</span></div>
+      <div class="ft-mark" id="ftMark" aria-label="IH4U" dir="ltr"><span class="ch m">I</span><span id="ftName">H4U</span></div>
       <div class="ft-legal">
-        <span>© <span id="ftYear">2026</span> M המשכנתאות · כל הזכויות שמורות</span>
-        <nav><a href="#">הצהרת נגישות</a><a href="#">מדיניות פרטיות</a><a href="#">תנאי שימוש</a></nav>
+        <span dir="ltr">© <span id="ftYear">2026</span> Israel Home For You</span>
         <span class="warn">אי עמידה בפירעון ההלוואה עלולה לגרור חיוב בריבית פיגורים והליכי הוצאה לפועל.</span>
       </div>
     </div>
@@ -1570,7 +2059,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   const body = $('body'), texture = $('texture'), clip = $('clipPath'),
         foldsDark = $('foldsDark'), foldsLight = $('foldsLight'),
         hem = $('hem'), hemShade = $('hemShade'), cord = $('cord'), tie = $('tie'),
-        knob = $('knob'), copy = $('copy'), contact = $('contact'), reveal = $('reveal'),
+        knob = $('knob'), copy = $('copy'), contact = $('heroContact'), reveal = $('reveal'),
         hint = $('hint'), img = $('sceneImg'), maskGrad = $('foldMaskGrad');
 
   /* Fallback image if the first one fails */
@@ -1713,7 +2202,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     img.style.transform = `scale(${1.14 - 0.14*reveal01})`;
   }
 
-  /* -------- Motion: spring toward a target, plus scroll -------- */
+  /* ======== Motion: spring toward a target, plus scroll ======== */
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let t = reduce ? 1 : 0, v = 0, target = t;
   let k = 14, c = 6.2;              // slow, cinematic intro pull
@@ -1750,7 +2239,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   // kick off intro pull
   if (!reduce) setTimeout(() => { if (!interacted) target = 1; }, 700);
 
-  /* -------- Drag the brass knob -------- */
+  /* ======== Drag the brass knob ======== */
   let grabOffset = 0;
   knob.addEventListener('pointerdown', e => {
     dragging = true; interacted = true; v = 0;
@@ -1803,7 +2292,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   document.getElementById('lampImg').src = SITE_IMAGES.lamp;   // IMAGE SLOT
   document.getElementById('loungeImg').src = imgOr(SITE_IMAGES.lounge, 'lounge', 'סלון', 1400, 1800, '#EAF4FF', '#0B1F3A');   // IMAGE SLOT
 
-  /* ---- 1. Staggered reveal (clip-path wipe + zoom-out, expo ease) ---- */
+  /* ==== 1. Staggered reveal (clip-path wipe + zoom-out, expo ease) ==== */
   const head = document.getElementById('moodHead');
   const order = ['t-chair','t-mirror','t-terra','t-wavesA','t-wavesB','t-lamp'];
   tiles.forEach(t => {
@@ -1824,17 +2313,17 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 
   // counter: easeOutExpo, races up then crawls to the final number
   function countUp(){
-    const el = document.getElementById('counter'), end = 1240, dur = reduce ? 0 : 2600, t0 = performance.now();
+    const el = document.getElementById('counter'), end = 2450000, dur = reduce ? 0 : 2600, t0 = performance.now();
     const tick = now => {
       const p = dur ? clamp((now - t0)/dur, 0, 1) : 1;
       const e = p === 1 ? 1 : 1 - Math.pow(2, -10*p);
-      el.textContent = Math.round(end*e).toLocaleString();
+      el.textContent = Math.round(end*e).toLocaleString('en-US');
       if (p < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
   }
 
-  /* ---- 2. Pointer state ---- */
+  /* ==== 2. Pointer state ==== */
   const ptr = { x: 0, y: 0, vx: 0 };     // normalized -0.5..0.5 across viewport
   let lastPX = null;
   addEventListener('pointermove', e => {
@@ -1843,7 +2332,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     lastPX = e.clientX;
   }, { passive: true });
 
-  /* ---- 3. Per-tile tilt ---- */
+  /* ==== 3. Per-tile tilt ==== */
   tiles.forEach(t => {
     t._rx = t._ry = t._trx = t._try = 0; t._hover = 0; t._hoverT = 0;
     if (!fine) return;
@@ -1856,14 +2345,14 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     t.addEventListener('pointerleave', () => { t._trx = t._try = 0; t._hoverT = 0; });
   });
 
-  /* ---- 4. Parallax layers ---- */
+  /* ==== 4. Parallax layers ==== */
   const layers = [...section.querySelectorAll('.layer')].map(el => ({
     el, tile: el.closest('.tile'),
     par: parseFloat(el.dataset.par || 0), mouse: parseFloat(el.dataset.mouse || 0),
     x: 0, y: 0
   }));
 
-  /* ---- 5. Waves ---- */
+  /* ==== 5. Waves ==== */
   const waves = [...section.querySelectorAll('.wv')].map(p => ({
     p, tile: p.closest('.tile'),
     base: +p.dataset.base, thick: +p.dataset.thick, amp: +p.dataset.amp,
@@ -1879,7 +2368,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     return 'M' + top.join(' L') + ' L' + bot.reverse().join(' L') + 'Z';
   }
 
-  /* ---- 6. Organic mirror (a slowly breathing blob) ---- */
+  /* ==== 6. Organic mirror (a slowly breathing blob) ==== */
   function blob(time, R, sx, sy){
     const n = 14, pts = [];
     for (let i=0;i<n;i++){
@@ -1898,7 +2387,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     return d;
   }
 
-  /* ---- 7. Woven pendant, built once ---- */
+  /* ==== 7. Woven pendant, built once ==== */
   const pend = document.getElementById('pendant');
   const mk = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); pend.appendChild(e); return e; };
   for (let i=0;i<9;i++) mk('ellipse', { cx:300, cy:10 + i*15, rx: i%2 ? 3 : 6.5, ry: 8.5, fill:'none', stroke:'#c9a45f', 'stroke-width': 2.4 });
@@ -1921,7 +2410,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   const lampTile = document.getElementById('lampTile'), glow = document.getElementById('glow'),
         arcText = document.getElementById('arcText');
 
-  /* ---- 8. Main loop ---- */
+  /* ==== 8. Main loop ==== */
   let smoothScroll = scrollY, lastScroll = scrollY, lastT = performance.now(), arcOff = 0, ampMul = {};
   function frame(now){
     const dt = Math.min(1/30, (now - lastT)/1000); lastT = now;
@@ -2001,25 +2490,38 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   const nameChars = [...hello.querySelectorAll('.ch')];
 
   // split paragraph into words; highlight the key service words
-  // Each chip shows its own copy (wording from the IH4U homepage copy doc); "ליווי לאורך הדרך" is the default.
+  // Each chip shows its own copy (wording from the IH4U homepage copy file); "הסיפור שלנו" is the default.
+  // The brand name is joined with no-break spaces so it stays one left-to-right word inside the right-to-left paragraph.
   const COPY = {
-    journey: { t: text.textContent, hl: ['בית','בישראל','נכס','השקעה','מימון','עלייה','וליווי','לאורך','הדרך'] },
-    buy:     { t: 'איתור הנכס שמתאים לחלום שלכם: דירה חדשה מקבלן או יד שנייה, בעיר שתבחרו, לפי הקריטריונים, התקציב ולוח הזמנים שלכם. מתווכת נדל״ן מוסמכת, שעלתה בעצמה מצרפת, מלווה אתכם מהחיפוש, דרך חיבור לעורך דין דובר צרפתית, ועד חתימת חוזה הרכישה וקבלת המפתח.',
-               hl: ['הנכס','לחלום','שתבחרו','מוסמכת','צרפתית','המפתח'] },
-    invest:  { t: 'בית בישראל יכול להיות גם השקעה חכמה. IH4U מציעה פרויקטים נבחרים שהיא מאמינה בפוטנציאל שלהם, ובראשם פרויקט הדגל בבת ים, דקות מתל אביב, לצד דירות בהנחה ועסקאות בלעדיות לזמן מוגבל. ואחרי הרכישה: איתור שוכרים, ניהול הנכס ותחזוקה, לפי הצורך.',
-               hl: ['השקעה','חכמה','הדגל','בלעדיות','שוכרים'] },
-    finance: { t: 'ייעוץ משכנתאות והשגת אישור הלוואה בכל הבנקים הגדולים בישראל, כולל משא ומתן בשמכם. מבדיקת כושר הרכישה וההון העצמי, דרך הכנת הבקשה, אישור עקרוני והשוואת הצעות הבנקים, ועד שחרור הכספים. כעשר שנות ניסיון וקשרים חזקים במערכת הבנקאית עובדים בשבילכם.',
-               hl: ['משכנתאות','הבנקים','כושר','עקרוני','הכספים'] },
-    move:    { t: 'עלייה מצרפת פירושה שוק אחר, מערכת בנקאית אחרת, בירוקרטיה לא מוכרת, שפה אחרת ומנטליות אחרת. צוות דובר צרפתית, שמכיר את המציאות הישראלית מבפנים, מרכז עבורכם את כל השלבים תחת קורת גג אחת: פתיחת חשבון בנק, עורך דין דובר צרפתית ותיאום מול חברות הביטוח.',
-               hl: ['עלייה','מצרפת','צרפתית','מבפנים','אחת'] }
+    story:    { t: text.textContent, hl: ['נשים.','עולמות.','אחת.','Israel','מלכי','וג׳ואן','מגשרות'] },
+    malki:    { t: 'מלכי, מומחית משכנתאות ומימון. כעשר שנות ניסיון בתחום המשכנתאות והמימון, וקשרים מקצועיים חזקים עם בכירים במערכת הבנקאית בישראל. מלכי מתייחסת לכל תיק כאילו היה העסקה הפרטית שלה: בודקת כל פרט, לא מוותרת בקלות ונלחמת על האינטרסים שלכם עד להשגת התנאים הטובים ביותר.',
+                hl: ['מלכי','מומחית','הבנקאית','ונלחמת','הטובים','ביותר'] },
+    joanne:   { t: 'ג׳ואן, מתווכת נדל"ן מוסמכת שעלתה בעצמה מצרפת, ולכן מכירה מקרוב את האתגרים של בניית חיים חדשים בישראל. כיועצת זוגית ומשפחתית, היא מביאה יכולת הקשבה נדירה ורגישות לכל משפחה שהיא מלווה.',
+                hl: ['ג׳ואן','מוסמכת','מצרפת','הקשבה','ורגישות'] },
+    why:      { t: 'אתם חולמים על בית בישראל: לקראת העלייה, בשביל המשפחה או כהשקעה חכמה. אבל מצרפת, התהליך יכול להרגיש מלא בנעלמים. שוק אחר, מערכת בנקאית אחרת, בירוקרטיה לא מוכרת, שפה אחרת ומנטליות אחרת. לכן בנינו שירות שמרכז את כל השלבים תחת קורת גג אחת, עם אנשים שמדברים את השפה שלכם ומכירים את המציאות הישראלית מבפנים. אתם לא רק קונים נכס בישראל. אתם בונים כאן את העתיד שלכם.',
+                hl: ['בנעלמים','קורת','גג','אחת,','מבפנים','בונים','העתיד'] },
+    approach: { t: 'אנחנו לא כאן רק כדי למכור לכם דירה. אנחנו רוצות לוודא שאתם מקבלים את ההחלטה הנכונה עבורכם. אנחנו משלבות מקצועיות, שקיפות, אמינות ושירות אישי, ופועלות תמיד להשיג עבורכם את הפתרון האיכותי והמשתלם ביותר. מקצועיות · שקיפות · אמינות · שירות אישי',
+                hl: ['ההחלטה','הנכונה','מקצועיות','שקיפות','אמינות','שירות','אישי'] }
   };
   let wordEls = [], chosen = false;
   function renderCopy(key){
-    const c = COPY[key], words = c.t.trim().split(/\s+/);
+    const c = COPY[key], words = c.t.trim().split(/[ \t\r\n]+/);
     text.innerHTML = '<span class="about-copy">' + words.map(w => `<span class="w${c.hl.some(h => w.includes(h)) ? ' hl' : ''}">${w}</span>`).join(' ') + '</span>';
     wordEls = [...text.querySelectorAll('.w')];
+    fitCopy();
   }
-  renderCopy('journey');
+  function fitCopy(){                                  // a long topic shrinks to fit between the greeting and the chips
+    text.style.fontSize = '';
+    const vh = text.parentElement.clientHeight, mob = innerWidth < 700, ul = $('chips');
+    const center = vh * (mob ? .52 : .54), topLimit = vh * (mob ? .255 : .265);
+    const botLimit = vh - ul.offsetHeight - (parseFloat(getComputedStyle(ul).bottom) || 0) - 16;
+    const avail = 2 * Math.min(center - topLimit, botLimit - center);
+    let fs = parseFloat(getComputedStyle(text).fontSize);
+    while (text.offsetHeight > avail && fs > 13){ fs -= 1; text.style.fontSize = fs + 'px'; }
+  }
+  addEventListener('resize', fitCopy);
+  document.fonts && document.fonts.ready.then(fitCopy);
+  renderCopy('story');
   const chipBtns = [...$('chips').querySelectorAll('button')];
   chipBtns.forEach(btn => btn.addEventListener('click', () => {
     if (btn.getAttribute('aria-pressed') === 'true') return;
@@ -2064,7 +2566,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
       who.style.opacity = 1 - seg(p, .14, .24);
       who.style.letterSpacing = `${-0.045 + a*0.08}em`;
 
-      /* B - giant outlined M zooms in from huge; "הי, נעים מאד / M המשכנתאות" rises letter by letter */
+      /* B - giant outlined IH4U zooms in from huge; the greeting and the IH4U name rise letter by letter */
       const bm = out(seg(p, .16, .40));
       const drift = seg(p, .40, 1);
       bigM.style.opacity = (bm * .9) * (1 - drift*.55) * (1 - seg(p, .48, .64));   // Angel 15-Nov: gone once the paragraph is shown
@@ -2126,22 +2628,22 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
   const EASE = 'cubic-bezier(.16,1,.3,1)';                 // fast → slow
   const SERVICES = [
-    { t:'רכישת יד ראשונה', pos:'50% 50%', d:'דירה מקבלן או דירה חדשה? נבנה עבורכם תמהיל משכנתא מותאם, נלווה את התשלומים לפי שלבי הבנייה וניצור מסלול שמתאים לתזרים שלכם.',
-      ic:'<path d="M8 32 L32 12 L56 32"/><path d="M15 27 V54 H49 V27"/><circle cx="32" cy="40" r="6"/><path d="M32 2 V8 M29 5 H35"/>' },
-    { t:'רכישת יד שניה', pos:'46% 50%', d:'מהחתימה על החוזה ועד העברת הכסף למוכר: תיאום מול השמאי, עורך הדין והבנק, ותמהיל שעובד בשבילכם לאורך כל הדרך.',
+    { t:'בחינת הפרויקט שלכם', pos:'50% 50%', d:'שיחה להבנת הצרכים, הקריטריונים, התקציב והמטרות שלכם, כדי שנציע רק נכסים שבאמת מתאימים לכם.',
+      ic:'<path d="M10 14 H54 V42 H30 L18 52 V42 H10 Z"/><path d="M20 24 H44"/><path d="M20 32 H36"/>' },
+    { t:'בדיקה פיננסית וכושר רכישה', pos:'55% 50%', d:'ניתוח ההכנסות, ההון העצמי וההתחייבויות הפיננסיות שלכם, כדי לקבוע את תקציב הנכס שתוכלו לשקול באופן מציאותי. השאלון האישי שלנו מראה לכם את כושר הרכישה שלכם ואילו נכסים נמצאים בהישג יד.',
+      ic:'<path d="M8 54 H56"/><path d="M16 54 V38"/><path d="M28 54 V28"/><path d="M40 54 V34"/><path d="M52 54 V16"/>' },
+    { t:'איתור הנכס שלכם', pos:'40% 50%', d:'דירה חדשה מקבלן (על הנייר) או יד שנייה, בעיר שתבחרו, לפי הקריטריונים, התקציב ולוח הזמנים שלכם.',
+      ic:'<path d="M8 32 L32 12 L56 32"/><path d="M15 27 V54 H49 V27"/><circle cx="32" cy="40" r="6"/>' },
+    { t:'הזדמנויות ופרויקטים חדשים', pos:'32% 50%', d:'דירות בהנחה, הצעות בלעדיות ועסקאות שלעיתים זמינות לזמן מוגבל בלבד. פרויקטים נבחרים ברחבי הארץ שאנחנו משווקות, מפרויקטים שממתינים להיתר בנייה ועד פרויקטים בשלבי בנייה.',
       ic:'<path d="M4 36 L22 21 L40 36"/><path d="M10 31 V54 H34"/><path d="M24 28 L42 13 L60 28"/><path d="M54 23 V54 H34"/>' },
-    { t:'שיפוצים', pos:'30% 50%', d:'מימון לשיפוץ הבית, להרחבה או להתאמה מחדש של החלל, בתנאים נוחים ובמסלול שלא מכביד על ההחזר החודשי.',
-      ic:'<circle cx="32" cy="11" r="3.5"/><path d="M30 14 L17 55"/><path d="M34 14 L47 55"/><path d="M20 43 A 15 15 0 0 0 44 43"/>' },
-    { t:'איחוד הלוואות', pos:'5% 50%', d:'מאחדים הלוואות והתחייבויות קיימות להחזר אחד, מסודר ונמוך יותר, כדי להחזיר לכם שליטה ושקט כלכלי.',
-      ic:'<path d="M6 14 C 26 14 26 32 40 32"/><path d="M6 32 H40"/><path d="M6 50 C 26 50 26 32 40 32"/><path d="M40 32 H54"/><circle cx="57" cy="32" r="3"/>' },
-    { t:'תיקים מסורבים', pos:'45% 50%', d:'קיבלתם סירוב מהבנק? אנחנו בוחנים את התיק לעומק, בונים אותו מחדש ומציגים אותו לגורמי המימון הנכונים.',
-      ic:'<path d="M45 15 A 21 21 0 1 0 53 34"/><path d="M6 32 H58"/><path d="M51 25 L58 32 L51 39"/>' },
-    { t:'הלוואות סולו', pos:'48% 50%', d:'פתרון מימון ממוקד ומהיר, המותאם בדיוק לצורך שלכם ולמצב הפיננסי שלכם, עם ליווי אישי מתחילת הדרך.',
-      ic:'<circle cx="32" cy="18" r="7"/><path d="M32 25 V55"/><path d="M20 55 H44"/><path d="M12 38 A 22 22 0 0 1 52 38"/>' },
-    { t:'מיחזור משכנתא', pos:'55% 50%', d:'בודקים את המשכנתא הקיימת מול תנאי השוק ומחזרים רק כשזה באמת משתלם: הורדת ריבית, קיצור תקופה או הקטנת ההחזר.',
-      ic:'<path d="M51 26 A 20 20 0 0 0 13 26"/><path d="M13 38 A 20 20 0 0 0 51 38"/><path d="M51 14 V26 H39"/><path d="M13 50 V38 H25"/>' },
-    { t:'משכנתא הפוכה', d:'לבני הגיל השלישי: מימון בשעבוד הדירה הקיימת, בלי למכור ובלי לעזוב את הבית, בתנאים ברורים ושקופים.',
-      ic:'<path d="M10 28 L32 10 L54 28"/><path d="M10 36 L32 54 L54 36"/><path d="M3 32 H61"/>' }
+    { t:'מימון ומשכנתאות', pos:'5% 50%', d:'הכנת הבקשה, השגת אישור עקרוני, השוואת הצעות הבנקים ומשא ומתן על הריביות, עד לשחרור הכספים.',
+      ic:'<path d="M8 24 L32 10 L56 24 Z"/><path d="M14 30 V48"/><path d="M26 30 V48"/><path d="M38 30 V48"/><path d="M50 30 V48"/><path d="M8 54 H56"/>' },
+    { t:'ליווי מנהלי ומשפטי', pos:'48% 50%', d:'פתיחת חשבון בנק, חיבור לעורך דין דובר צרפתית, תיאום מול חברות הביטוח וליווי עד חתימת חוזה הרכישה.',
+      ic:'<path d="M16 8 H40 L50 18 V56 H16 Z"/><path d="M40 8 V18 H50"/><path d="M24 30 H42"/><path d="M24 40 H42"/><path d="M24 48 H34"/>' },
+    { t:'ליווי עד קבלת המפתח', pos:'46% 50%', d:'מעקב צמוד אחרי הרכישה ותיאום כל שלב, עד שהמפתח בידיים שלכם.',
+      ic:'<circle cx="20" cy="32" r="11"/><path d="M31 32 H58"/><path d="M48 32 V42"/><path d="M58 32 V40"/>' },
+    { t:'אחרי הרכישה: השכרה ושיפוצים', pos:'30% 50%', d:'איתור שוכרים, ניהול הנכס, חיבור לאנשי מקצוע אמינים וארגון עבודות שיפוץ.',
+      ic:'<circle cx="32" cy="11" r="3.5"/><path d="M30 14 L17 55"/><path d="M34 14 L47 55"/><path d="M20 43 A 15 15 0 0 0 44 43"/>' }
   ];
   const root = document.getElementById('services'), grid = document.getElementById('svcGrid'),
         stage = document.getElementById('svcStage'), imgEl = document.getElementById('svcImg'),
@@ -2163,7 +2665,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   // IMAGE SLOTS: SITE_IMAGES.services[0-7]
   SERVICES.forEach((s, i) => { s.src = imgOr(SITE_IMAGES.services[i], `services[${i}]`, `${String(i+1).padStart(2,'0')} · ${s.t}`, 1600, 1200, '#0050B0', '#FFFFFF'); const im = new Image(); im.src = s.src; });
 
-  /* ---- FLIP: record → change layout → animate from old position ---- */
+  /* ==== FLIP: record → change layout → animate from old position ==== */
   let current = -1, busyUntil = 0;
   function flip(mutate){
     const first = tiles.map(t => t.getBoundingClientRect());
@@ -2222,14 +2724,20 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
         open(i);
       });
     }
-    t.addEventListener('click', () => open(i));
+    t.addEventListener('click', () => {
+      open(i);
+      if (innerWidth <= 900){                          // phone: the photo panel sits above the list, bring it into view
+        const pr = document.getElementById('svcPanel').getBoundingClientRect();
+        if (pr.top < 0 || pr.top > innerHeight * .45) scrollTo({ top: scrollY + pr.top - 12, behavior: reduce ? 'auto' : 'smooth' });
+      }
+    });
     t.addEventListener('focus', () => open(i));
   });
   /* Angel 15-Nov: the section always shows the split view (list + photo panel), starting on 01.
      No close button, no close on mouse-leave or Escape, so the 4x2 box grid never shows. */
   root.classList.add('open'); current = 0; show(0);
 
-  /* ---- Scroll motion: title rows drift apart, rule draws, big numeral floats ---- */
+  /* ==== Scroll motion: title rows drift apart, rule draws, big numeral floats ==== */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ root.classList.add('shown'); show(current); io.disconnect(); } }), { threshold: .15 });
   io.observe(root);
   const rows = [...root.querySelectorAll('.svc-title .row')], rule = document.getElementById('svcRule'), num = document.getElementById('svcNum');
@@ -2253,9 +2761,8 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
  const root=document.getElementById('testimonials');
  if(!root)return;
  const slides=[
-  {quote:'כאן תופיע המלצת לקוח אמיתית לאחר קבלת אישור לפרסום.',name:'המלצה ממתינה לאישור',role:'תמונת המחשה, לא לקוח אמיתי',image:'images/testimonial-preview-01.webp'},
-  {quote:'עדות נוספת תתווסף לאחר קבלת ציטוט ותמונת לקוח מאומתים.',name:'מקום להמלצת לקוח שנייה',role:'תמונת המחשה, לא לקוח אמיתי',image:'images/testimonial-preview-02.webp'},
-  {quote:'כאן ניתן יהיה להציג סיפור לקוח שלישי על הדרך לבית בישראל.',name:'מקום להמלצת לקוח שלישית',role:'תמונת המחשה, לא לקוח אמיתי',image:'images/testimonial-preview-03.webp'}
+  {quote:`״אשתי ואני רוצים להודות מכל הלב לכל הצוות של Israel Home For You על הליווי לאורך כל פרויקט הנדל"ן שלנו. ההקשבה, העצות והרצינות שלכם היו יקרות ערך ותרמו רבות להצלחת הרכישה. אנחנו ממליצים בחום על Israel Home For You בזכות איכות הליווי והמחויבות. שוב תודה רבה לכל הצוות על החוויה הנפלאה, ובמיוחד לגב׳ שושנה על הזמינות, המקצועיות וההיענות המהירה, וכן למלכי.״`,name:'אנדרה א.',role:'תורגם מהמקור בצרפתית',initial:'א'},
+  {quote:`״אני ממליצה בחום על Israel Home For You, שעזרו לי למצוא את דירת החלומות שלי. גב׳ שושנה קשובה מאוד לכל הקריטריונים שלנו כדי לחדד את החיפוש, ונותנת עצות מצוינות. מלכי מצידה מקצועית ויעילה במיוחד בהשגת ההלוואה הטובה ביותר, בתנאים ובריביות הטובים ביותר. שתיהן זמינות כמעט 24 שעות ביממה לענות על כל השאלות שלנו.״`,name:'משפחת אלוש',role:'תורגם מהמקור בצרפתית',initial:'א'}
  ];
  const main=root.querySelector('.tst-main');
  const originalQuote=document.getElementById('tstQuote');
@@ -2263,7 +2770,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
  const controls=root.querySelector('.tst-slider-controls');
  const count=document.getElementById('tstCount');
  const sideNum=root.querySelector('.tst-side .num');
- const stack=document.createElement('div');stack.className='tst-slide-stack';stack.setAttribute('aria-label','המלצות לקוחות: תצוגת הדגמה');
+ const stack=document.createElement('div');stack.className='tst-slide-stack';stack.setAttribute('aria-label','המלצות לקוחות');
  const panels=slides.map((data,i)=>{
    const panel=document.createElement('div');panel.className='tst-scroll-slide';panel.dataset.index=String(i);
    panel.setAttribute('aria-hidden',String(i!==0));
@@ -2271,7 +2778,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
    const a=originalAuthor.cloneNode(false);a.removeAttribute('id');
    a.innerHTML='';
    const av=document.createElement('div');av.className='av';
-   const img=document.createElement('img');img.src=data.image;img.alt='דיוקן להמחשה בלבד, לא לקוח IH4U';img.width=58;img.height=58;img.loading=i===0?'eager':'lazy';av.appendChild(img);
+   av.textContent=data.initial;av.setAttribute('aria-hidden','true');   // an initial, no stock portrait
    const details=document.createElement('div');const nm=document.createElement('b');nm.textContent=data.name;const role=document.createElement('span');role.textContent=data.role;details.append(nm,role);
    a.append(av,details);panel.append(q,a);stack.appendChild(panel);return panel;
  });
@@ -2282,20 +2789,23 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
  const publish=(i)=>{if(i===active)return;active=i;
    const label=String(i+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
    if(count)count.textContent=label;
-   if(sideNum)sideNum.innerHTML=String(i+1).padStart(2,'0')+'<small> / 03</small>';
+   if(sideNum)sideNum.innerHTML=String(i+1).padStart(2,'0')+'<small> / '+String(slides.length).padStart(2,'0')+'</small>';
    panels.forEach((el,j)=>el.setAttribute('aria-hidden',String(j!==i)));
  };
  root.classList.add('tst-scroll-ready');
+ // the quotes are long: the stack is as tall as its tallest card, so nothing spills onto the controls
+ const fitStack=()=>{stack.style.minHeight='';let h=0;panels.forEach(p=>{h=Math.max(h,p.scrollHeight)});if(h)stack.style.minHeight=h+'px'};
+ fitStack();addEventListener('resize',fitStack);addEventListener('load',fitStack);document.fonts&&document.fonts.ready.then(fitStack);
  document.getElementById('tstPrev')?.addEventListener('click',()=>scrollToSlide?.(Math.max(0,active-1)));
  document.getElementById('tstNext')?.addEventListener('click',()=>scrollToSlide?.(Math.min(slides.length-1,active+1)));
  root.addEventListener('keydown',e=>{if(e.target.closest('button') || e.altKey || e.ctrlKey || e.metaKey)return;
-    if(e.key==='ArrowDown'||e.key==='ArrowLeft'){e.preventDefault();scrollToSlide?.(Math.min(2,active+1))}
+    if(e.key==='ArrowDown'||e.key==='ArrowLeft'){e.preventDefault();scrollToSlide?.(Math.min(slides.length-1,active+1))}
     if(e.key==='ArrowUp'||e.key==='ArrowRight'){e.preventDefault();scrollToSlide?.(Math.max(0,active-1))}
  });
  let touchX=null,touchY=null;
  root.addEventListener('touchstart',e=>{if(e.touches.length===1){touchX=e.touches[0].clientX;touchY=e.touches[0].clientY}},{passive:true});
  root.addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;touchX=null;touchY=null;
-   if(Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.4)scrollToSlide?.(Math.max(0,Math.min(2,active+(dx<0?1:-1))));
+   if(Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.4)scrollToSlide?.(Math.max(0,Math.min(slides.length-1,active+(dx<0?1:-1))));
  },{passive:true});
  window.IH4U_TST={root,panels,publish,getActive:()=>active,setScroll:fn=>{scrollToSlide=fn}};
 })();
@@ -2308,6 +2818,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   const $ = id => document.getElementById(id);
   const track = $('galTrack'), row = $('galRow'), bg = $('galBg'), ctr = $('galCtr'), prog = $('galProg');
   const cards = [...row.children];
+  { const fi = $('flagImg'); if (fi) fi.src = EMBEDDED.jr1; }   // flagship block photo (illustration)
   const PAL = [['#0050B0','#FFFFFF'],['#FFD700','#0B1F3A'],['#0898B0','#0B1F3A'],['#EAF4FF','#0B1F3A'],
                ['#0078D7','#FFFFFF'],['#0D8A4A','#FFFFFF'],['#06657A','#FFFFFF'],['#003C87','#FFD700']];
   const icon = '<svg class="ic" viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="30" rx="2"/><circle cx="17" cy="19" r="3.5"/><path d="M6 34 L18 24 L27 31 L33 26 L42 33"/></svg>';
@@ -2366,7 +2877,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     requestAnimationFrame(loop);
   })(last);
 
-  /* ---- Lightbox with FLIP expand ---- */
+  /* ==== Lightbox with FLIP expand ==== */
   const lb = $('lb'), frame = $('lbFrame'), veil = lb.querySelector('.veil'), bar = lb.querySelector('.bar');
   let idx = -1, from = null;
   function fitRect(c){
@@ -2431,7 +2942,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
   /* weight ladder */
   const W = [[100,'Thin'],[200,'ExtraLight'],[300,'Light'],[400,'Regular'],[500,'Medium'],[600,'SemiBold'],[700,'Bold'],[800,'ExtraBold'],[900,'Black']];
   const rowsEl = document.getElementById('wRows');
-  rowsEl.innerHTML = W.map(([w,n]) => `<div class="row" style="font-weight:${w}"><em>${n} ${w}</em><span>M המשכנתאות · משכנתא משתלמת במיוחד</span></div>`).join('');
+  rowsEl.innerHTML = W.map(([w,n]) => `<div class="row" style="font-weight:${w}"><em>${n} ${w}</em><span>Israel Home For You · הבית שלכם בישראל מתחיל כאן</span></div>`).join('');
   const rows = [...rowsEl.children];
 
   const C = [
@@ -2459,7 +2970,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 
   (function loop(){
     const vh = innerHeight, sr = stack.getBoundingClientRect();
-    if (sr.top < vh && sr.bottom > 0){
+    if (sr.height > 0 && sr.top < vh && sr.bottom > 0){
       const k = reduce ? 1 : .09;                                // fast → slow smoothing
       const gap = parseFloat(getComputedStyle(panels[0]).marginBottom) || vh*.7;
       panels.forEach((p, i) => {
@@ -2538,7 +3049,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 
   // photo 1 feeds the M mask + all three arches mirror the three photos
   // IMAGE SLOTS: SITE_IMAGES.journey[0-2]
-  const JT = ['01 · חלום', '02 · תכנון', '03 · מפתח'], JB = ['#0050B0', '#0898B0', '#0D8A4A'];
+  const JT = ['01 · חלום', '02 · תכנון', '03 · מפתח'], JB = ['#0050B0', '#0898B0', '#2A8FA8'];
   const srcs = [0,1,2].map(i => imgOr(SITE_IMAGES.journey[i], `journey[${i}]`, JT[i], 2400, 1600, JB[i], '#FFFFFF'));
   const JP = ['45% 75%', '35% 55%', '55% 60%'], AP = ['24% 50%', '30% 50%', '56% 50%'];   // crop focus: full-screen scenes, closing arches
   srcs.forEach((u, i) => { const el = $('jrImg' + (i+1)); if (el){ el.src = u; el.style.objectPosition = JP[i]; } });
@@ -2650,19 +3161,19 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
 })();
 </script>
 <script id="ih4u-step02-palette-comparison">
-/* Three color combinations requested at the Nov 9 IH4U meeting. Preview only, not final approval. */
+/* Palette 3 was chosen on 16-Nov and is the site default (tuned blue and gold). 1 and 2 stay for comparison in review mode (?review=1). */
 (()=>{
   const options=[
     {name:'1 · Blue / Yellow / Green / Turquoise', colors:[['Blue','#3689C9'],['Yellow','#F6CF49'],['Green','#69A98C'],['Turquoise','#42C4C3']]},
     {name:'2 · Blue / Yellow / Turquoise / Gold', colors:[['Blue','#3689C9'],['Yellow','#F6CF49'],['Turquoise','#42C4C3'],['Gold','#C5A35F']]},
-    {name:'3 · Blue / Yellow / Gold / Peach / Turquoise', colors:[['Blue','#3689C9'],['Yellow','#F6CF49'],['Gold','#C5A35F'],['Peach','#F2B7A6'],['Turquoise','#42C4C3']]}
+    {name:'3 · Blue / Yellow / Gold / Peach / Turquoise', colors:[['Blue','#4097DB'],['Yellow','#F6CF49'],['Gold','#D4AF37'],['Peach','#F2B7A6'],['Turquoise','#42C4C3']]}
   ];
   const hebrew={Blue:'כחול ים',Yellow:'צהוב שמש',Green:'ירוק',Turquoise:'טורקיז',Gold:'זהב',Peach:'אפרסק'};
   const readableColor=c=>['Yellow','Peach','Turquoise','Green'].includes(c)?'#102941':'#ffffff';
   const panel=document.createElement('aside');
   panel.className='ih4u-palette-panel';
   panel.setAttribute('aria-label','IH4U color palette comparison');
-  panel.innerHTML='<div class="ih4u-palette-head"><span>IH4U · 3 color options</span><button type="button" id="ih4u-palette-toggle" aria-label="Minimize palette selector" aria-expanded="true">−</button></div><div class="ih4u-palette-options" role="group" aria-label="Choose palette"></div><div class="ih4u-palette-foot">Preview shades only · Final colors require client approval</div>';
+  panel.innerHTML='<div class="ih4u-palette-head"><span>IH4U · 3 color options</span><button type="button" id="ih4u-palette-toggle" aria-label="Minimize palette selector" aria-expanded="true">−</button></div><div class="ih4u-palette-options" role="group" aria-label="Choose palette"></div><div class="ih4u-palette-foot">Palette 3 is the site palette · 1 and 2 are for comparison only</div>';
   const items=panel.querySelector('.ih4u-palette-options');
   options.forEach((o,i)=>{
     const btn=document.createElement('button');btn.type='button';btn.className='ih4u-palette-opt';btn.setAttribute('aria-pressed','false');
@@ -2687,7 +3198,8 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     for(const [k,v] of Object.entries(tokens))root.style.setProperty(k,v);
     // The existing moodboard uses per-section CSS custom properties for visual accents.
     // Change only their color variables; do not move or replace any elements.
-    root.style.setProperty('--home-bg',map.Green||map.Peach||map.Gold);   // the palette's extra color fills the IH4U home tile
+    root.style.setProperty('--home-bg',map.Green||map.Peach||map.Gold);
+    root.style.setProperty('--ih4u-fin-a',map.Green||blue);root.style.setProperty('--ih4u-fin-b',map.Green?'#0A6E3B':'#0F3A63');   // journey close: green only when the palette has one   // the palette's extra color fills the IH4U home tile
     const accents={'.hero':{'--terra':turq,'--gold':gold},'.tst':{'--gold':map.Gold||turq},'.svc':{'--copper':gold},'.mood':{'--terra':peach,'--gold':gold,'--sage':green,'--olive':green},'.about':{'--bg':turq,'--terra':yellow,'--copper':gold},'.gal':{'--gold':blue}};
     for(const [sel,values] of Object.entries(accents))document.querySelectorAll(sel).forEach(el=>{for(const [k,v] of Object.entries(values))el.style.setProperty(k,v)});
     // Match the existing typography/color moodboard sample and its copyable cards to the selected palette.
@@ -2724,7 +3236,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
     const toast=document.getElementById('toast');
     if(toast){toast.textContent=(hebrew[name]||name)+': '+h.where;toast.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>toast.classList.remove('on'),3200)}
   }
-  apply(0);
+  apply(2);
 })();
 </script>
 
@@ -2766,7 +3278,7 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
    const total=timeline.duration();
    // Only the testimonial section pins; the next section continues normally after release.
    const trigger=ScrollTrigger.create({
-      trigger:root,pin:true,start:'top top',end:()=>'+='+Math.round(window.innerHeight*(window.innerWidth<700?3.5:3.0)),
+      trigger:root,pin:true,start:'top top',end:()=>'+='+Math.round(window.innerHeight*(panels.length>2?(window.innerWidth<700?3.5:3.0):(window.innerWidth<700?2.6:2.2))),
       scrub:0.45,anticipatePin:1,invalidateOnRefresh:true,
       animation:timeline,
       onUpdate:self=>{
@@ -2800,13 +3312,13 @@ html[data-ih4u-font="assistant"] [dir="rtl"],html[data-ih4u-font="rubik"] [dir="
  <div class="ih4u-font-body" id="ih4u-font-body">
   <label for="ih4u-font-select">Compare free font options</label>
   <select id="ih4u-font-select" aria-label="Choose Hebrew font for preview">
-   <option value="heebo">Heebo (original)</option>
-   <option value="assistant">Assistant</option>
+   <option value="heebo">Heebo (previous)</option>
+   <option value="assistant" selected>Assistant (site font)</option>
    <option value="rubik">Rubik</option>
    <option value="noto">Noto Sans Hebrew</option>
   </select>
   <div class="ih4u-font-sample" lang="he" dir="rtl">הבית שלכם בישראל<br>מהחלום ועד קבלת המפתח</div>
-  <p class="ih4u-font-detail">Preview only · no approved font selected. Choose “Heebo (original)” to restore the previous appearance. Fonts load online.</p>
+  <p class="ih4u-font-detail">Assistant is the site font. The other options are for comparison only. Fonts load online.</p>
  </div>
 </aside>
 <script>
