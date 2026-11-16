@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0B2A4A" />
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
-<script>if(/(^|&)review=1(&|$)/.test(location.search.slice(1)))document.documentElement.classList.add('ih4u-review');</script>
+<script>if(/(^|&)review=1(&|$)/.test(location.search.slice(1)))document.documentElement.classList.add('ih4u-review');if(/(^|&)clean=1(&|$)/.test(location.search.slice(1)))document.documentElement.classList.add('ih4u-clean');</script>
 <script id="ih4u-i18n">
 /* IH4U languages (16-Nov, round 4): he (default, right to left), en and fr (left to right).
    One runtime dictionary with three complete tables. Static text carries data-i18n (text), data-i18n-html (inline markup)
@@ -1064,6 +1064,10 @@ html:not(.ih4u-review) #ih4u-font-panel,
 html:not(.ih4u-review) #ih4uLogoOpen,
 html:not(.ih4u-review) #ih4uLogoDialog,
 html:not(.ih4u-review) #brand{display:none!important}
+/* clean preview (?review=1&palette=N&clean=1): the chosen palette without the floating review tools, for showing a palette to a client */
+html.ih4u-clean .ih4u-palette-panel,
+html.ih4u-clean #ih4u-font-panel,
+html.ih4u-clean #ih4uLogoOpen{display:none!important}
 
 /* 2. Palette 3, tuned and locked. The review panel can still switch palettes at runtime. */
 :root{
