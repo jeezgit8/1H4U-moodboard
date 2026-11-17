@@ -1064,10 +1064,10 @@ html:not(.ih4u-review) #ih4u-font-panel,
 html:not(.ih4u-review) #ih4uLogoOpen,
 html:not(.ih4u-review) #ih4uLogoDialog,
 html:not(.ih4u-review) #brand{display:none!important}
-/* clean preview (?review=1&palette=N&clean=1): the chosen palette without the floating review tools, for showing a palette to a client */
+/* clean preview (?review=1&palette=N&clean=1): the chosen palette without the floating review tools or the design-language section, so a client can show it as the site */
 html.ih4u-clean .ih4u-palette-panel,
 html.ih4u-clean #ih4u-font-panel,
-html.ih4u-clean #ih4uLogoOpen{display:none!important}
+html.ih4u-clean #ih4uLogoOpen, html.ih4u-clean #ih4uLogoDialog, html.ih4u-clean #brand{display:none!important}
 
 /* 2. Palette 3, tuned and locked. The review panel can still switch palettes at runtime. */
 :root{
